@@ -27,6 +27,8 @@ nav {
 
 header {
     background-color: #6e30f2;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 footer {
@@ -58,4 +60,9 @@ body {
 
 .container-index h2 {
     color: #8350f2;
+}
+
+.card{
+    width: 45%;
+    height: auto;
 }
