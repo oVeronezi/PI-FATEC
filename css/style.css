@@ -62,7 +62,13 @@ body {
     color: #8350f2;
 }
 
-.card{
-    width: 45%;
+.card {
+    width: 62%;
+    height: auto;
+}
+
+.logo {
+    margin-top: 5px;
+    width: 130px;
     height: auto;
 }
