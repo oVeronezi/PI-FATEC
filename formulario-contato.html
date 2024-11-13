@@ -15,7 +15,7 @@
         <div class="max-w-3xl w-full bg-white p-6 rounded-lg shadow-lg">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Entre em Contato</h2>
 
-            <form >
+            <form>
                 <!-- Nome -->
                 <div class="mb-4">
                     <label for="nome" class="block text-gray-700 font-medium">Nome Completo</label>
@@ -46,8 +46,7 @@
 
                 <!-- Botão de Enviar -->
                 <div class="mb-4 text-center">
-                    <button 
-                        onclick="alerta()"
+                    <button onclick="alerta()"
                         class="contactForm w-full bg-purple-600 text-white p-3 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600">
                         Enviar Mensagem
                     </button>
@@ -62,30 +61,6 @@
 
         </div>
     </div>
-
-    <script ">
-function alerta(){
-
-      // Selecionando o formulário
-      const form = document.querySelector(".contactForm")
-
-
-
-
-
-form.addEventListener("onclick" ,(event) => {
-
-    console.log("ola")
-
-    alert('Mensagem enviada com sucesso!');
-
-})
-
-
-}
-
-
-    </script>
 
 </body>
 
