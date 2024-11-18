@@ -14,18 +14,57 @@
 
     <!-- Navbar -->
     <nav class="pt-2">
-        <div class="container mx-auto flex justify-between items-center">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo ou nome do site -->
             <div class="text-white text-lg font-bold">Fatec Jaú</div>
-            <div class="flex space-x-4">
-                <a href="./index.html" class="text-white px-4 py-2 rounded">Início</a>
-                <a href="./professores.html" class="text-white px-4 py-2 rounded">Professores</a>
-                <a href="./projetos.html" class="text-white px-4 py-2 rounded">Projetos</a>
-                <a href="./contato.html" class="text-white px-4 py-2 rounded">Contato</a>
-                <a href="./desenvolvedores.html" class="text-white px-4 py-2 rounded">Desenvolvedores</a>
-                <a href="./cadastro.html" class="text-white px-4 py-2 rounded">Cadastro</a>
-            </div>
+
+            <!-- Menu hamburguer (visível em telas pequenas) -->
+            <nav>
+                <div class="sm:hidden flex items-center">
+                    <button id="hamburger" class="text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+
+                <!-- Links de navegação (visíveis em telas grandes) -->
+                <div class="hidden sm:flex space-x-4">
+                    <a href="./index.html" class="text-white px-4 py-2 rounded">Início</a>
+                    <a href="./professores.html" class="text-white px-4 py-2 rounded">Professores</a>
+                    <a href="./projetos.html" class="text-white px-4 py-2 rounded ">Projetos</a>
+                    <a href="./contato.html" class="text-white px-4 py-2 rounded ">Contato</a>
+                    <a href="./desenvolvedores.html" class="text-white px-4 py-2 rounded">Desenvolvedores</a>
+                    <a href="./cadastro.html" class="text-white px-4 py-2 rounded">Cadastro</a>
+                </div>
         </div>
     </nav>
+
+    <!-- Menu Dropdown (oculto em telas grandes, aparece em telas pequenas) -->
+    <div id="menu" class="sm:hidden bg-purple-800 px-4 py-2 hidden">
+        <a href="./index.html" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Início</a>
+        <a href="./professores.html" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Professores</a>
+        <a href="./projetos.html" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Projetos</a>
+        <a href="./contato.html" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Contato</a>
+        <a href="./desenvolvedores.html"
+            class="text-white block px-4 py-2 rounded hover:bg-purple-300">Desenvolvedores</a>
+        <a href="./cadastro.html" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Cadastro</a>
+    </div>
+
+
+    <!-- Script para alternar o menu -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
 
     <!-- Hero Section -->
     <header class="text-white py-10">
