@@ -18,11 +18,11 @@
         <div class="container mx-auto flex justify-between items-center px-4">
             <!-- Logo ou nome do site -->
             <!-- <div class="text-white text-lg font-bold">Fatec Jaú</div> -->
-            <img class="w-32" src="./img/logodsm-branco.png" alt="">
+            <img class="w-32" src="./img/logodsm-branco.png" alt="logodsm-branco">
 
             <!-- Menu hamburguer (visível em telas pequenas) -->
             <nav>
-                <div class="sm:hidden flex items-center">
+                <div class="md:hidden flex items-center">
                     <button id="hamburger" class="text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                             class="w-6 h-6">
@@ -31,10 +31,8 @@
                         </svg>
                     </button>
                 </div>
-
-
                 <!-- Links de navegação (visíveis em telas grandes) -->
-                <div class="hidden sm:flex space-x-4">
+                <div class="hidden md:flex space-x-4">
                     <a href="./index.html" class="text-white px-4 py-2 rounded">Início</a>
                     <a href="./professores.html" class="text-white px-4 py-2 rounded">Professores</a>
                     <a href="./projetos.html" class="text-white px-4 py-2 rounded ">Projetos</a>
@@ -45,15 +43,13 @@
     </nav>
 
     <!-- Menu Dropdown (oculto em telas grandes, aparece em telas pequenas) -->
-    <div id="menu" class="sm:hidden bg-purple-800 px-4 py-2 hidden">
+    <div id="menu" class="md:hidden bg-purple-800 px-6 py-2 hidden">
         <a href="./index.html" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Início</a>
         <a href="./professores.html" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Professores</a>
         <a href="./projetos.html" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Projetos</a>
         <a href="./contato.html" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Contato</a>
-        <a href="./desenvolvedores.html"
-            class="text-white block px-4 py-2 rounded hover:bg-purple-300">Desenvolvedores</a>
+        <a href="./desenvolvedores.html" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Desenvolvedores</a>
     </div>
-
 
     <!-- Script para alternar o menu -->
     <script>
@@ -74,79 +70,78 @@
                 usuários.</p>
         </div>
     </header>
-    <div class="flex justify-between mx-20 my-10 ">
-        <!-- Card 1 -->
-        <div class="max-w-sm mx-2 rounded-lg overflow-hidden shadow-lg bg-white w-1/3">
-            <div class="flex justify-center p-4">
-                <img class="w-full max-w-xs rounded-lg" src="https://media-gru1-1.cdn.whatsapp.net/v/t61.24694-24/454943197_396174950201392_3410166445217136759_n.jpg?ccb=11-4&oh=01_Q5AaIFGvQjJD6tsTFZQJSEDQHT2NPgWeERMJDCINIwvCTlPz&oe=67488D3D&_nc_sid=5e03e0&_nc_cat=108"
-                alt="Foto do Luis">
-            </div>
-            <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Luis Felipe Veronezi</div>
-                <p class="text-gray-700 text-base">
-                    1° Semestre
-                </p>
-            </div>
-            <div class="px-6 pt-4 pb-2 my-1 mb-3">
-                <a href="https://www.linkedin.com/in/luis-felipe-veronezi-57a942304/"
-                                class="mt-1 mb-2 mr-1 pr-1 flex-1 bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">
-                                <i class="fab fa-linkedin fa-2xl text-white mr-2"></i> <!-- Ícone do LinkedIn -->
-                            </a>
-                            
-                <a href="https://github.com/oVeronezi"
-                            class="mt-1 mb-2 mr-1 pr-1 pl-3 flex-1 bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-centermt-1 mb-2 mr-1 pr-1 flex-1 bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">
-                            <i class="fab fa-github fa-2xl text-white mr-2"></i> <!-- Ícone do GitHub -->
-                        </a>
-            </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-5 sm:mx-10 my-10">
+    <!-- Card 1 -->
+    <div class="max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white">
+        <div class="flex justify-center p-4">
+            <img class="w-full max-w-xs rounded-lg" src="https://media-gru1-1.cdn.whatsapp.net/v/t61.24694-24/454943197_396174950201392_3410166445217136759_n.jpg?ccb=11-4&oh=01_Q5AaIFGvQjJD6tsTFZQJSEDQHT2NPgWeERMJDCINIwvCTlPz&oe=67488D3D&_nc_sid=5e03e0&_nc_cat=108"
+            alt="Foto do Luis">
         </div>
-        <!-- Card 2 -->
-        <div class="max-w-sm mx-2 rounded-lg overflow-hidden shadow-lg bg-white w-1/3">
-            <div class="flex justify-center p-4">
-                <img class="w-full max-w-xs rounded-lg" src="https://media.licdn.com/dms/image/v2/D4D03AQEbTLhVSwhHyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724849754036?e=1737590400&v=beta&t=vNEoHAfK0fznuLLUvvasarbfwCL3mNJPeAMt-skjAUs" alt="foto do gatão">
-            </div>
-            <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Leonardo Antoniassi</div>
-                <p class="text-gray-700 text-base">
-                    1° Semestre
-                </p>
-            </div>
-            <div class="px-6 pt-4 pb-2 my-1 mb-3">
-                <a href="https://www.linkedin.com/in/leonardo-antoniassi-46084a322/"
-                                class="mt-1 mb-2 mr-1 pr-1 flex-1 bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">
-                                <i class="fab fa-linkedin fa-2xl text-white mr-2"></i> <!-- Ícone do LinkedIn -->
-                            </a>
-                            
-                <a href="https://github.com/leoantoniassi"
-                            class="mt-1 mb-2 mr-1 pr-1 pl-3 flex-1 bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-centermt-1 mb-2 mr-1 pr-1 flex-1 bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">
-                            <i class="fab fa-github fa-2xl text-white mr-2"></i> <!-- Ícone do GitHub -->
-                        </a>
-            </div>
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Luis Felipe Veronezi</div>
+            <p class="text-gray-700 text-base">
+                1° Semestre
+            </p>
         </div>
-        <!-- Card 3 -->
-        <div class="max-w-sm mx-2 rounded-lg overflow-hidden shadow-lg bg-white w-1/3">
-            <div class="flex justify-center p-4">
-                <img class="w-full max-w-xs rounded-lg" src="https://avatars.githubusercontent.com/u/179020682?v=4" alt="Imagem do Card">
-            </div>
-            <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Éricky dos Santos</div>
-                <p class="text-gray-700 text-base">
-                    1° Semestre
-                </p>
-            </div>
-            <div class="px-6 pt-4 pb-2 my-1 mb-3">
-                <a href="https://www.linkedin.com/in/eriky-santos-6a32a1322/"
-                                class="mt-1 mb-2 mr-1 pr-1 flex-1 bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">
-                                <i class="fab fa-linkedin fa-2xl text-white mr-2"></i> <!-- Ícone do LinkedIn -->
-                            </a>
-                            
-                <a href="https://github.com/erikysantos"
-                            class="mt-1 mb-2 mr-1 pr-1 pl-3 flex-1 bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-centermt-1 mb-2 mr-1 pr-1 flex-1 bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">
-                            <i class="fab fa-github fa-2xl text-white mr-2"></i> <!-- Ícone do GitHub -->
-                        </a>
-            </div>
+        <div class="px-6 pt-4 pb-2 my-1 mb-3">
+            <a href="https://www.linkedin.com/in/luis-felipe-veronezi-57a942304/"
+                class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300">
+                <i class="fab fa-linkedin fa-2xl text-white mr-2"></i> LinkedIn
+            </a>
+            <a href="https://github.com/oVeronezi"
+                class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 mt-2">
+                <i class="fab fa-github fa-2xl text-white mr-2"></i> GitHub
+            </a>
         </div>
     </div>
-    
+
+    <!-- Card 2 -->
+    <div class="max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white">
+        <div class="flex justify-center p-4">
+            <img class="w-80 h-80 max-w-xs rounded-lg" src="https://media.licdn.com/dms/image/v2/D4D03AQEbTLhVSwhHyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724849754036?e=1737590400&v=beta&t=vNEoHAfK0fznuLLUvvasarbfwCL3mNJPeAMt-skjAUs" alt="Foto do Leonardo">
+        </div>
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Leonardo Antoniassi</div>
+            <p class="text-gray-700 text-base">
+                1° Semestre
+            </p>
+        </div>
+        <div class="px-6 pt-4 pb-2 my-1 mb-3">
+            <a href="https://www.linkedin.com/in/leonardo-antoniassi-46084a322/"
+                class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300">
+                <i class="fab fa-linkedin fa-2xl text-white mr-2"></i> LinkedIn
+            </a>
+            <a href="https://github.com/leoantoniassi"
+                class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 mt-2">
+                <i class="fab fa-github fa-2xl text-white mr-2"></i> GitHub
+            </a>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white">
+        <div class="flex justify-center p-4">
+            <img class="w-full max-w-xs rounded-lg" src="https://avatars.githubusercontent.com/u/179020682?v=4" alt="Imagem do Éricky">
+        </div>
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Éricky dos Santos</div>
+            <p class="text-gray-700 text-base">
+                1° Semestre
+            </p>
+        </div>
+        <div class="px-6 pt-4 pb-2 my-1 mb-3">
+            <a href="https://www.linkedin.com/in/eriky-santos-6a32a1322/"
+                class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300">
+                <i class="fab fa-linkedin fa-2xl text-white mr-2"></i> LinkedIn
+            </a>
+            <a href="https://github.com/erikysantos"
+                class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 mt-2">
+                <i class="fab fa-github fa-2xl text-white mr-2"></i> GitHub
+            </a>
+        </div>
+    </div>
+</div>
+
     
     <!-- Footer -->
     <footer class="text-white py-4 mt-32">
