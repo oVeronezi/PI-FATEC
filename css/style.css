@@ -1,90 +1,94 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .card {
-    box-shadow: 0px 10px 69px -4px rgba(0, 0, 0, 0.7);
-    -webkit-box-shadow: 0px 10px 69px -4px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 0px 10px 69px -4px rgba(0, 0, 0, 0.7);
-    border-radius: 30px;
+  box-shadow: 0px 10px 69px -4px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0px 10px 69px -4px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 10px 69px -4px rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
 }
 
 nav {
-    background-color: #6e30f2;
+  background-color: #6e30f2;
+  padding: 0;
 }
 
 header {
-    background-color: #6e30f2;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+  background-color: #6e30f2;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 header-proj {
-    background-color: #6e30f2;
+  background-color: #6e30f2;
 }
 
-
 sub-nav {
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 footer {
-    background-color: #6e30f2;
+  background-color: #6e30f2;
 }
 
 nav a:hover {
-    background-color: #8350f2;
+  background-color: #8350f2;
 }
 
 section {
-    background-color: #f7f7f7;
+  background-color: #f7f7f7;
 }
 
 .list-alunos {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
-    background-color: #f7f7f7;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  background-color: #f7f7f7;
 }
 
 .list-alunos p {
-    color: black;
-}
-
-body {
-    background-color: #f7f7f7;
+  color: black;
 }
 
 .container-index h2 {
-    color: #8350f2;
+  color: #8350f2;
 }
 
 .card {
-    width: 60%;
-    height: auto;
+  width: 60%;
+  height: auto;
 }
 
 .logo {
-    margin-top: 5px;
-    width: 130px;
-    height: auto;
+  margin-top: 5px;
+  width: 130px;
+  height: auto;
+  transition: all 0.5s ease;
+}
+.logo:hover {
+  scale: 1.1;
+  border-radius: 3%;
+  transition: 0.5s;
+}
+.menu-dis {
+  padding: 20px;
 }
