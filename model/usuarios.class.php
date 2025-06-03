@@ -2,7 +2,7 @@
 abstract class Usuario
 {
     public function __construct(
-        protected int $id_usuarios = "",
+        protected int $id_usuarios = 0,
         protected string $nome = "",
         protected string $email = "",
         protected string $senha = ""

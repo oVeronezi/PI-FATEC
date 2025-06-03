@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
@@ -47,12 +47,12 @@
 
                 <!-- Botão de Enviar -->
                 <div class="mb-4 text-center">
-                    <a href="./mensagem-enviada.html" class="bg-purple-700 p-2 pr-10 pl-10 rounded-md text-white font-bold hover:bg-purple-600">Enviar Mensagem</a>
+                    <a href="./mensagem-enviada.php" class="bg-purple-700 p-2 pr-10 pl-10 rounded-md text-white font-bold hover:bg-purple-600">Enviar Mensagem</a>
                 </div>
 
                 <!-- Botão Voltar -->
                 <div class="text-center">
-                    <a href="./contato.html" class="text-black font-bold hover:text-purple-600">Voltar</a>
+                    <a href="./contato.php" class="text-black font-bold hover:text-purple-600">Voltar</a>
                 </div>
 
             </form>

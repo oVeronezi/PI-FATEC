@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db  # Espera o MySQL estar pronto antes de iniciar o web
+
+  db:
+    image: mysql:8.0  # Usando a imagem oficial do MySQL
+    environment:
+      MYSQL_ROOT_PASSWORD: 1238425wky22  # Senha do root
+      MYSQL_DATABASE: clinictrack  # Nome do banco de dados inicial
+      MYSQL_USER: gabriel  # Nome de usuário
+      MYSQL_PASSWORD: 123123w  # Senha do usuário
+    ports:
+      - "3306:3306"  # Porta que será exposta (se precisar acessar diretamente)
+    volumes:
+      - mysql-data:/var/lib/mysql  # Volume persistente para o banco de dados
+
+volumes:
+  mysql-data:

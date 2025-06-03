@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato Enviado</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="bg-gray-50">
@@ -19,7 +20,7 @@
 
             <!-- Botão para voltar à página principal -->
             <div class="flex justify-center space-x-4">
-                <a href="./index.html"
+                <a href="./home.php"
                     class="bg-purple-600 text-white px-6 py-2 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600">
                     Página Inicial
                 </a>
