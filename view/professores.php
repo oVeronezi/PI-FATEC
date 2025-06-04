@@ -12,7 +12,7 @@
 </head>
 
 <body class="flex flex-col min-h-screen">
-<!-- Navbar -->
+    <!-- Navbar -->
     <nav class="pt-2">
         <div class="container mx-auto flex justify-between items-center px-4">
             <!-- Logo ou nome do site -->
@@ -73,6 +73,28 @@
         <div class="list-alunos">
             <ul role="list" class="divide-y divide-gray-300">
 
+                <!-- Prof Alex Paulo -->
+                <li class="flex justify-between gap-x-6 py-1">
+                    <div class="flex min-w-0 gap-x-4">
+                        <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
+                            src="./img/alekao.png"
+                            alt="Foto do Alekão">
+                        <div class="min-w-0 flex-auto">
+                            <p class="text-sm/6 font-semibold">Alex Paulo Lopes Batista</p>
+                            <p class="mt-1 truncate text-xs/5">alex.batista@fatec.sp.gov.br</p>
+                        </div>
+                    </div>
+                    <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                        <p class="text-sm/6"><b>Desenvolvimento Web</b></p>
+                        <div class="flex gap-2">
+                            <a href="https://www.linkedin.com/in/alex-paulo-lopes-batista-a2936524/" target="_blank"
+                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Linkedin
+                                <a href="http://lattes.cnpq.br/7239785869687027" target="_blank"
+                                    class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
+                        </div>
+                    </div>
+                </li>
+
                 <!-- prof Anderson Ferreira -->
                 <li class="flex justify-between gap-x-6 py-1">
                     <div class="flex min-w-0 gap-x-4">
@@ -88,9 +110,9 @@
                         <p class="text-sm/6"><b>Design Digital</b></p>
                         <div class="flex gap-2">
                             <a href="https://www.linkedin.com/in/anderson-ferreira-fernandes-89456937/" target="_blank"
-                            class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Linkedin
-                            <a href="http://lattes.cnpq.br/1627329996472089" target="_blank"
-                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
+                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Linkedin
+                                <a href="http://lattes.cnpq.br/1627329996472089" target="_blank"
+                                    class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
                         </div>
                     </div>
                 </li>
@@ -110,9 +132,9 @@
                         <p class="text-sm/6"><b>Engenharia de Software</b></p>
                         <div class="flex gap-2">
                             <a href="https://www.linkedin.com/in/cida-zem-52936a34/" target="_blank"
-                            class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
-                            <a href="http://lattes.cnpq.br/6123540746643830" target="_blank"
-                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
+                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
+                                <a href="http://lattes.cnpq.br/6123540746643830" target="_blank"
+                                    class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
                         </div>
                     </div>
                 </li>
@@ -132,9 +154,9 @@
                         <p class="text-sm/6"><b>Banco De Dados</b></p>
                         <div class="flex gap-2">
                             <a href="https://www.linkedin.com/in/cognus/" target="_blank"
-                            class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
-                            <a href="http://lattes.cnpq.br/9183639307001530" target="_blank"
-                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
+                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
+                                <a href="http://lattes.cnpq.br/9183639307001530" target="_blank"
+                                    class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
                         </div>
                     </div>
                 </li>
@@ -154,9 +176,9 @@
                         <p class="text-sm/6"><b>Sistemas Operacionais</b></p>
                         <div class="flex gap-2">
                             <a href="https://www.linkedin.com/in/paulo-buscariollo-b6898921/" target="_blank"
-                            class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
-                            <a href="http://lattes.cnpq.br/3704997196792935" target="_blank"
-                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
+                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
+                                <a href="http://lattes.cnpq.br/3704997196792935" target="_blank"
+                                    class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
                         </div>
                     </div>
                 </li>
@@ -176,9 +198,9 @@
                         <p class="text-sm/6"><b>Desenvolvimento Web, Banco de Dados Relacional</b></p>
                         <div class="flex gap-2">
                             <a href="https://www.linkedin.com/in/ronanzenatti/" target="_blank"
-                            class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
-                            <a href="http://lattes.cnpq.br/9197032267433879" target="_blank"
-                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
+                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
+                                <a href="http://lattes.cnpq.br/9197032267433879" target="_blank"
+                                    class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
                         </div>
                     </div>
                 </li>
@@ -198,14 +220,34 @@
                         <p class="text-sm/6"><b>Algoritimos e Lógica de Programação, Estrutura de Dados</b></p>
                         <div class="flex gap-2">
                             <a href="https://www.linkedin.com/in/tiagotas/" target="_blank"
-                            class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
-                            <a href="http://lattes.cnpq.br/0183165737768103" target="_blank"
-                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
+                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
+                                <a href="http://lattes.cnpq.br/0183165737768103" target="_blank"
+                                    class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
                         </div>
                     </div>
                 </li>
 
-
+                <!-- prof Vânia -->
+                <li class="flex justify-between gap-x-6 py-5">
+                    <div class="flex min-w-0 gap-x-4">
+                        <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
+                            src="../img/vania.png"
+                            alt="foto Vania">
+                        <div class="min-w-0 flex-auto">
+                            <p class="text-sm/6 font-semibold">Vânia Somaio Teixeira</p>
+                            <p class="mt-1 truncate text-xs/5">vania.teixeira@fatec.sp.gov.br</p>
+                        </div>
+                    </div>
+                    <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                        <p class="text-sm/6"><b>Desenvolvimento Web, Tecnicas de Programação</b></p>
+                        <div class="flex gap-2">
+                            <a href="" target="_blank"
+                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
+                                <a href="http://lattes.cnpq.br/4413496984677686" target="_blank"
+                                    class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
