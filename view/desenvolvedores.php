@@ -85,11 +85,11 @@
                 </p>
             </div>
             <div class="px-6 pt-4 pb-2 my-1 mb-3">
-                <a href="https://www.linkedin.com/in/luis-felipe-veronezi-57a942304/"
+                <a href="https://www.linkedin.com/in/luis-felipe-veronezi-57a942304/" target="_blank"
                     class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300">
                     <i class="fab fa-linkedin fa-2xl text-white mr-2"></i> LinkedIn
                 </a>
-                <a href="https://github.com/oVeronezi"
+                <a href="https://github.com/oVeronezi" target="_blank"
                     class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 mt-2">
                     <i class="fab fa-github fa-2xl text-white mr-2"></i> GitHub
                 </a>
@@ -99,7 +99,7 @@
         <!-- Card 2 -->
         <div class="max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white">
             <div class="flex justify-center p-4">
-                <img class="w-80 h-80 max-w-xs rounded-lg" src="./1724849754036.jfif" alt="Foto do Leonardo">
+                <img class="w-full max-w-xs rounded-lg" src="../img/foto leo.jpg" alt="Foto do Leonardo">
             </div>
             <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">Leonardo Antoniassi</div>
@@ -108,46 +108,24 @@
                 </p>
             </div>
             <div class="px-6 pt-4 pb-2 my-1 mb-3">
-                <a href="https://www.linkedin.com/in/leonardo-antoniassi-46084a322/"
+                <a href="https://www.linkedin.com/in/leonardo-antoniassi-46084a322/" target="_blank"
                     class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300">
                     <i class="fab fa-linkedin fa-2xl text-white mr-2"></i> LinkedIn
                 </a>
-                <a href="https://github.com/leoantoniassi"
+                <a href="https://github.com/leoantoniassi" target="_blank"
                     class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 mt-2">
                     <i class="fab fa-github fa-2xl text-white mr-2"></i> GitHub
                 </a>
             </div>
         </div>
 
-        <!-- Card 3 -->
-        <div class="max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white">
-            <div class="flex justify-center p-4">
-                <img class="w-full max-w-xs rounded-lg" src="https://avatars.githubusercontent.com/u/179020682?v=4" alt="Imagem do Éricky">
-            </div>
-            <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Éricky dos Santos</div>
-                <p class="text-gray-700 text-base">
-                    1° Semestre
-                </p>
-            </div>
-            <div class="px-6 pt-4 pb-2 my-1 mb-3">
-                <a href="https://www.linkedin.com/in/eriky-santos-6a32a1322/"
-                    class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300">
-                    <i class="fab fa-linkedin fa-2xl text-white mr-2"></i> LinkedIn
-                </a>
-                <a href="https://github.com/erikysantos"
-                    class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 mt-2">
-                    <i class="fab fa-github fa-2xl text-white mr-2"></i> GitHub
-                </a>
-            </div>
-        </div>
     </div>
 
 
     <!-- Footer -->
     <footer class="text-white py-4 mt-32">
         <div class="container mx-auto text-center">
-            <p>&copy; 2024 Fatec Jaú</p>
+            <p>&copy; 2025 Fatec Jaú</p>
         </div>
     </footer>
 

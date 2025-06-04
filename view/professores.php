@@ -77,7 +77,7 @@
                 <li class="flex justify-between gap-x-6 py-1">
                     <div class="flex min-w-0 gap-x-4">
                         <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
-                            src="https://media.licdn.com/dms/image/v2/D4D03AQHqIdjCitq1Vg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1727753595792?e=1737590400&v=beta&t=kdkNNkIVq7-O9z4CjAZl048_T15AtNOeWDsdBTnLBvc"
+                            src="./img/anderson.png"
                             alt="Foto do Anderson">
                         <div class="min-w-0 flex-auto">
                             <p class="text-sm/6 font-semibold">Anderson Ferreira</p>
@@ -87,9 +87,9 @@
                     <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
                         <p class="text-sm/6"><b>Design Digital</b></p>
                         <div class="flex gap-2">
-                            <a href="https://www.linkedin.com/in/anderson-ferreira-fernandes-89456937/"
+                            <a href="https://www.linkedin.com/in/anderson-ferreira-fernandes-89456937/" target="_blank"
                             class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Linkedin
-                            <a href="http://lattes.cnpq.br/1627329996472089"
+                            <a href="http://lattes.cnpq.br/1627329996472089" target="_blank"
                                 class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                 <li class="flex justify-between gap-x-6 py-5">
                     <div class="flex min-w-0 gap-x-4">
                         <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
-                            src="https://media.licdn.com/dms/image/v2/D4D03AQFnt0tA2p3mzw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715803573321?e=1737590400&v=beta&t=X70D1b0Eqn2cowdFmj2UPVH58bqkc1-ovpMyV26Y9ig"
+                            src="./img/cida.png"
                             alt="Foto da Cida">
                         <div class="min-w-0 flex-auto">
                             <p class="text-sm/6 font-semibold">Aparecida Maria Zem Lopes</p>
@@ -109,9 +109,9 @@
                     <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
                         <p class="text-sm/6"><b>Engenharia de Software</b></p>
                         <div class="flex gap-2">
-                            <a href="https://www.linkedin.com/in/cida-zem-52936a34/"
+                            <a href="https://www.linkedin.com/in/cida-zem-52936a34/" target="_blank"
                             class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
-                            <a href="http://lattes.cnpq.br/6123540746643830"
+                            <a href="http://lattes.cnpq.br/6123540746643830" target="_blank"
                                 class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
                         </div>
                     </div>
@@ -121,7 +121,7 @@
                 <li class="flex justify-between gap-x-6 py-5">
                     <div class="flex min-w-0 gap-x-4">
                         <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
-                            src="https://media.licdn.com/dms/image/v2/D4D03AQHDqbpDJvEuIg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1706570300359?e=1737590400&v=beta&t=ZpLnGHxRoHfaW3f1YYlHd6kxtCMMtfpawLweyhtagV0"
+                            src="./img/helio.png"
                             alt="">
                         <div class="min-w-0 flex-auto">
                             <p class="text-sm/6 font-semibold">Hélio Luis da Silva Rodrigues</p>
@@ -131,9 +131,9 @@
                     <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
                         <p class="text-sm/6"><b>Banco De Dados</b></p>
                         <div class="flex gap-2">
-                            <a href="https://www.linkedin.com/in/cognus/"
+                            <a href="https://www.linkedin.com/in/cognus/" target="_blank"
                             class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
-                            <a href="http://lattes.cnpq.br/9183639307001530"
+                            <a href="http://lattes.cnpq.br/9183639307001530" target="_blank"
                                 class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
                         </div>
                     </div>
@@ -143,8 +143,8 @@
                 <li class="flex justify-between gap-x-6 py-5">
                     <div class="flex min-w-0 gap-x-4">
                         <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
-                            src="https://media.licdn.com/dms/image/v2/D5603AQES_NVslgdlGA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1731508892089?e=1737590400&v=beta&t=jvjKfz0x9kIKucBGTD47e3gMrqFFcMd8Iqt5pVyKmk0"
-                            alt="">
+                            src="./img/busca.png"
+                            alt="foto Busca">
                         <div class="min-w-0 flex-auto">
                             <p class="text-sm/6 font-semibold">Paulo Henrique Buscariollo</p>
                             <p class="mt-1 truncate text-xs/5">phb.jau@fatec.sp.gov.br</p>
@@ -153,9 +153,9 @@
                     <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
                         <p class="text-sm/6"><b>Sistemas Operacionais</b></p>
                         <div class="flex gap-2">
-                            <a href="https://www.linkedin.com/in/paulo-buscariollo-b6898921/"
+                            <a href="https://www.linkedin.com/in/paulo-buscariollo-b6898921/" target="_blank"
                             class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
-                            <a href="http://lattes.cnpq.br/3704997196792935"
+                            <a href="http://lattes.cnpq.br/3704997196792935" target="_blank"
                                 class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
                         </div>
                     </div>
@@ -165,19 +165,19 @@
                 <li class="flex justify-between gap-x-6 py-5">
                     <div class="flex min-w-0 gap-x-4">
                         <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
-                            src="https://media.licdn.com/dms/image/v2/D4D03AQEC4CRG0py1eQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1668579772465?e=1737590400&v=beta&t=Ad25PDsi71Y5XQa3NEEATloayaNCM6-njC7OPT0Z1IU"
-                            alt="">
+                            src="../img/ronan.png"
+                            alt="foto Ronan">
                         <div class="min-w-0 flex-auto">
                             <p class="text-sm/6 font-semibold">Ronan Adriel Zenatti</p>
                             <p class="mt-1 truncate text-xs/5">ronan.zenatti@fatec.sp.gov.br</p>
                         </div>
                     </div>
                     <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                        <p class="text-sm/6"><b>Desenvolvimento Web</b></p>
+                        <p class="text-sm/6"><b>Desenvolvimento Web, Banco de Dados Relacional</b></p>
                         <div class="flex gap-2">
-                            <a href="https://www.linkedin.com/in/ronanzenatti/"
+                            <a href="https://www.linkedin.com/in/ronanzenatti/" target="_blank"
                             class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
-                            <a href="http://lattes.cnpq.br/9197032267433879"
+                            <a href="http://lattes.cnpq.br/9197032267433879" target="_blank"
                                 class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
                         </div>
                     </div>
@@ -187,19 +187,19 @@
                 <li class="flex justify-between gap-x-6 py-5">
                     <div class="flex min-w-0 gap-x-4">
                         <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
-                            src="https://media.licdn.com/dms/image/v2/D4D03AQFv-DWcYikA7A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1728157488319?e=1737590400&v=beta&t=lDJpSmO8CBhmSvTXskPOOOjzECdXdH4mdCBsSCE-WM8"
-                            alt="">
+                            src="../img/tiago.png"
+                            alt="foto Tiago">
                         <div class="min-w-0 flex-auto">
                             <p class="text-sm/6 font-semibold">Tiago Antonio da Silva</p>
                             <p class="mt-1 truncate text-xs/5">tiago.silva238@fatec.sp.gov.br</p>
                         </div>
                     </div>
                     <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                        <p class="text-sm/6"><b>Algoritimos e Lógica de Programação</b></p>
+                        <p class="text-sm/6"><b>Algoritimos e Lógica de Programação, Estrutura de Dados</b></p>
                         <div class="flex gap-2">
-                            <a href="https://www.linkedin.com/in/tiagotas/"
+                            <a href="https://www.linkedin.com/in/tiagotas/" target="_blank"
                             class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
-                            <a href="http://lattes.cnpq.br/0183165737768103"
+                            <a href="http://lattes.cnpq.br/0183165737768103" target="_blank"
                                 class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
                         </div>
                     </div>
@@ -214,7 +214,7 @@
     <!-- Footer -->
     <footer class="text-white py-4 mt-28">
         <div class="container mx-auto text-center">
-            <p>&copy; 2024 Fatec Jaú</p>
+            <p>&copy; 2025 Fatec Jaú</p>
         </div>
     </footer>
 

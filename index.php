@@ -30,7 +30,7 @@ $routes = [
         $controller->showHome();
     },
     '/home' => function () {
-       require_once "view/home.php";
+        require_once "view/home.php";
     },
     '/professores' => function () {
         require_once "view/professores.php";
@@ -47,19 +47,37 @@ $routes = [
     '/contato' => function () {
         require_once "view/contato.php";
     },
-    '/formulario-contato' => function() {
+    '/formulario-contato' => function () {
         require_once "view/formulario-contato.php";
     },
-    'mensagem-enviada' => function() {
+    'mensagem-enviada' => function () {
         require_once "view/mensagem-enviada.php";
     },
-    '/desenvolvedores' => function() {
+    '/desenvolvedores' => function () {
         require_once "view/desenvolvedores.php";
     },
-    '/login' => function() {
+    '/login' => function () {
         require_once "view/login.php";
     },
-    
+    '/cadastro-aluno' => function () {
+        require_once "view/cadastro-aluno.php";
+    },
+    '/cadastro-professor' => function () {
+        require_once "view/cadastro-professor.php";
+    },
+    '/mensagem-aluno-cadastrado' => function () {
+        // Rota para a view de mensagem de aluno cadastrado
+        require_once "view/mensagem-aluno-cadastrado-enviado.php";
+    },
+    '/mensagem-professor-cadastrado' => function () {
+        // Rota para a view de mensagem de professor cadastrado
+        require_once "view/mensagem-cadastro-professor-enviada.php";
+    },
+    '/mensagem-cadastro-enviada' => function () {
+        // Rota para a view de mensagem de cadastro genérica (se for diferente de mensagem-enviada.php)
+        require_once "view/mensagem-cadastro-enviada.php";
+    }
+
 ];
 
 // Executa a rota

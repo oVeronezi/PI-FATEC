@@ -161,7 +161,7 @@
     <!-- Footer -->
     <footer class="text-white py-4 mt-10">
         <div class="container mx-auto text-center">
-            <p>&copy; 2024 Fatec Jaú</p>
+            <p>&copy; 2025 Fatec Jaú</p>
         </div>
     </footer>
 

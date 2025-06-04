@@ -655,18 +655,13 @@
 
 
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-</body>
 
-</html>
-
-<!-- Footer -->
-<footer class="text-white py-4 mt-10">
-    <div class="container mx-auto text-center">
-        <p>&copy; 2025 Fatec Jaú</p>
-    </div>
-</footer>
-
-
+        <!-- Footer -->
+        <footer class="text-white py-4 mt-28">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2025 Fatec Jaú</p>
+            </div>
+        </footer>
 </body>
 
 </html>
