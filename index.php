@@ -1,59 +1,68 @@
 <?php
 session_start();
 
-require_once '../PI-FATEC/controller/user.controller.php';
-require_once '../PI-FATEC/controller/home.Controller.php';
+// Define o baseurl como vazio, já que está na raiz
+$baseurl = '';
 
-// Obtém a URI completa que o navegador requisitou (ex: /PI-FATEC/home)
+// Importa os controllers
+require_once 'controller/user.controller.php';
+require_once 'controller/home.controller.php';
+
+// Obtém a URI requisitada (ex: /home ou /)
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-// ATENÇÃO: Esta é a chave!
-// O $baseurl DEVE ser o nome da pasta em que seu projeto está dentro do htdocs.
-// Se sua pasta é 'PI-FATEC', então:
-$baseurl = "/PI-FATEC";
-
-// Lógica para "limpar" a URI, removendo o caminho base (o nome da pasta)
+// Remove o baseurl da URI (não faz nada neste caso, pois é '')
 if (strpos($uri, $baseurl) === 0) {
     $uri_limpa = substr($uri, strlen($baseurl));
 } else {
-    // Se, por algum motivo, o baseurl não estiver na URI (ex: em um servidor de produção na raiz),
-    // a URI limpa será a própria URI.
     $uri_limpa = $uri;
 }
 
-// Se a URI limpa for uma string vazia (ex: acessou apenas http://localhost/PI-FATEC/),
-// tratamos ela como a raiz da aplicação.
-if ($uri_limpa === '') {
+// Trata a raiz da aplicação
+if ($uri_limpa === '' || $uri_limpa === '/') {
     $uri_limpa = '/';
 }
 
-
+// Define as rotas
 $routes = [
-    // A rota para a página inicial (ex: http://localhost/PI-FATEC/)
-    "/" => function () {
+    '/' => function () {
         $controller = new HomeController();
         $controller->showHome();
     },
-
-    // A rota para /home (ex: http://localhost/PI-FATEC/home)
     '/home' => function () {
-        if (!isset($_SESSION['user'])) {
-            // Redireciona para a página de login, usando o baseurl para o caminho correto
-            // header('Location: ' . $baseurl . '/login');
-            exit;
-        }
-        $controller = new HomeController();
-        $controller->showHome();
+       require_once "view/home.php";
     },
-
-    // A rota para /p (ex: http://localhost/PI-FATEC/p)
-    "/p" => function () {
-        // require_once 'view/professores.php';
-        echo "entrou laele";
-    }
+    '/professores' => function () {
+        require_once "view/professores.php";
+    },
+    '/projetos' => function () {
+        require_once "view/projetos.php";
+    },
+    '/projetos-2' => function () {
+        require_once "view/projetos-2.php";
+    },
+    '/projetos-3' => function () {
+        require_once "view/projetos-3.php";
+    },
+    '/contato' => function () {
+        require_once "view/contato.php";
+    },
+    '/formulario-contato' => function() {
+        require_once "view/formulario-contato.php";
+    },
+    'mensagem-enviada' => function() {
+        require_once "view/mensagem-enviada.php";
+    },
+    '/desenvolvedores' => function() {
+        require_once "view/desenvolvedores.php";
+    },
+    '/login' => function() {
+        require_once "view/login.php";
+    },
+    
 ];
 
-// O roteador agora verifica a $uri_limpa
+// Executa a rota
 if (isset($routes[$uri_limpa])) {
     $routes[$uri_limpa]();
 } else {

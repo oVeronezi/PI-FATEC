@@ -17,7 +17,7 @@
         <div class="container mx-auto flex justify-between items-center px-4">
             <!-- Logo ou nome do site -->
             <!-- <div class="text-white text-lg font-bold">Fatec Jaú</div> -->
-            <img class="logo" src="../img/logodsm-branco.png" alt="logodsm-branco">
+            <img class="logo" src="./img/logodsm-branco.png" alt="logodsm-branco">
 
             <!-- Menu hamburguer (visível em telas pequenas) -->
             <nav>
@@ -32,26 +32,24 @@
                 </div>
                 <!-- Links de navegação (visíveis em telas grandes) -->
                 <div class="hidden md:flex space-x-4">
-                    <a href="./home.php" class="text-white px-4 py-2 rounded">Início</a>
-                    <a href="./professores.php" class="text-white px-4 py-2 rounded">Professores</a>
-                    <a href="./projetos.php" class="text-white px-4 py-2 rounded ">Projetos</a>
-                    <a href="./contato.php" class="text-white px-4 py-2 rounded ">Contato</a>
-                    <a href="./desenvolvedores.php" class="text-white px-4 py-2 rounded">Desenvolvedores</a>
+                    <a href="/home" class="text-white px-4 py-2 rounded">Início</a>
+                    <a href="/professores" class="text-white px-4 py-2 rounded">Professores</a>
+                    <a href="/projetos" class="text-white px-4 py-2 rounded ">Projetos</a>
+                    <a href="/contato" class="text-white px-4 py-2 rounded ">Contato</a>
+                    <a href="/desenvolvedores" class="text-white px-4 py-2 rounded">Desenvolvedores</a>
                 </div>
         </div>
     </nav>
 
-<!-- Menu Dropdown (oculto em telas grandes, aparece em telas pequenas) -->
-<div id="menu" class="md:hidden bg-purple-800 px-6 py-2 hidden">
-    <a href="./index.php" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Início</a>
-    <a href="./professores.php" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Professores</a>
-    <a href="./projetos.php" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Projetos</a>
-    <a href="./contato.php" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Contato</a>
-    <a href="./desenvolvedores.php" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Desenvolvedores</a>
-</div>
-
-
-
+    <!-- Menu Dropdown (oculto em telas grandes, aparece em telas pequenas) -->
+    <div id="menu" class="md:hidden bg-purple-800 px-6 py-2 hidden">
+        <a href="/home" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Início</a>
+        <a href="/professores" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Professores</a>
+        <a href="/projetos" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Projetos</a>
+        <a href="/contato" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Contato</a>
+        <a href="/desenvolvedores"
+            class="text-white block px-4 py-2 rounded hover:bg-purple-300">Desenvolvedores</a>
+    </div>
 
     <!-- Script para alternar o menu -->
     <script>
@@ -62,7 +60,6 @@
             menu.classList.toggle('hidden');
         });
     </script>
-
 
     <!-- Hero Section -->
     <header class="text-white py-10">

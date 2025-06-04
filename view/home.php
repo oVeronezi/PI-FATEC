@@ -32,22 +32,22 @@
                 </div>
                 <!-- Links de navegação (visíveis em telas grandes) -->
                 <div class="hidden md:flex space-x-4">
-                    <a href="/PI-FATEC/home" class="text-white px-4 py-2 rounded">Início</a>
-                    <a href="/PI-FATEC/p" class="text-white px-4 py-2 rounded">Professores</a>
-                    <a href="/PI-FATEC/projetos" class="text-white px-4 py-2 rounded ">Projetos</a>
-                    <a href="/PI-FATEC/contato" class="text-white px-4 py-2 rounded ">Contato</a>
-                    <a href="/PI-FATEC/desenvolvedores" class="text-white px-4 py-2 rounded">Desenvolvedores</a>
+                    <a href="/home" class="text-white px-4 py-2 rounded">Início</a>
+                    <a href="/professores" class="text-white px-4 py-2 rounded">Professores</a>
+                    <a href="/projetos" class="text-white px-4 py-2 rounded ">Projetos</a>
+                    <a href="/contato" class="text-white px-4 py-2 rounded ">Contato</a>
+                    <a href="/desenvolvedores" class="text-white px-4 py-2 rounded">Desenvolvedores</a>
                 </div>
         </div>
     </nav>
 
     <!-- Menu Dropdown (oculto em telas grandes, aparece em telas pequenas) -->
     <div id="menu" class="md:hidden bg-purple-800 px-6 py-2 hidden">
-        <a href="/PI-FATEC/home" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Início</a>
-        <a href="/PI-FATEC/professores" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Professores</a>
-        <a href="/PI-FATEC/projetos" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Projetos</a>
-        <a href="/PI-FATEC/contato" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Contato</a>
-        <a href="/PI-FATEC/desenvolvedores"
+        <a href="/home" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Início</a>
+        <a href="/professores" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Professores</a>
+        <a href="/projetos" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Projetos</a>
+        <a href="/contato" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Contato</a>
+        <a href="/desenvolvedores"
             class="text-white block px-4 py-2 rounded hover:bg-purple-300">Desenvolvedores</a>
     </div>
 

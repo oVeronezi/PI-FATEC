@@ -20,11 +20,11 @@
 
             <!-- Botão para voltar à página principal -->
             <div class="flex justify-center space-x-4">
-                <a href="./home.php"
+                <a href="/home"
                     class="bg-purple-600 text-white px-6 py-2 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600">
                     Página Inicial
                 </a>
-                <a href="./formulario-contato.php"
+                <a href="/formulario-contato"
                     class="bg-gray-300 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300">
                     Enviar Outra Mensagem
                 </a>

@@ -18,7 +18,7 @@ services:
       MYSQL_USER: gabriel  # Nome de usuário
       MYSQL_PASSWORD: 123123w  # Senha do usuário
     ports:
-      - "3306:3306"  # Porta que será exposta (se precisar acessar diretamente)
+      - "3307:3306"  # Porta que será exposta (se precisar acessar diretamente)
     volumes:
       - mysql-data:/var/lib/mysql  # Volume persistente para o banco de dados
 

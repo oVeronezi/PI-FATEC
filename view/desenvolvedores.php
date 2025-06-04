@@ -13,12 +13,12 @@
 
 <body class="flex flex-col min-h-screen">
 
-<!-- Navbar -->
+    <!-- Navbar -->
     <nav class="pt-2">
         <div class="container mx-auto flex justify-between items-center px-4">
             <!-- Logo ou nome do site -->
             <!-- <div class="text-white text-lg font-bold">Fatec Jaú</div> -->
-            <img class="logo" src="../img/logodsm-branco.png" alt="logodsm-branco">
+            <img class="logo" src="./img/logodsm-branco.png" alt="logodsm-branco">
 
             <!-- Menu hamburguer (visível em telas pequenas) -->
             <nav>
@@ -33,22 +33,23 @@
                 </div>
                 <!-- Links de navegação (visíveis em telas grandes) -->
                 <div class="hidden md:flex space-x-4">
-                    <a href="./home.php" class="text-white px-4 py-2 rounded">Início</a>
-                    <a href="./professores.php" class="text-white px-4 py-2 rounded">Professores</a>
-                    <a href="./projetos.php" class="text-white px-4 py-2 rounded ">Projetos</a>
-                    <a href="./contato.php" class="text-white px-4 py-2 rounded ">Contato</a>
-                    <a href="./desenvolvedores.php" class="text-white px-4 py-2 rounded">Desenvolvedores</a>
+                    <a href="/home" class="text-white px-4 py-2 rounded">Início</a>
+                    <a href="/professores" class="text-white px-4 py-2 rounded">Professores</a>
+                    <a href="/projetos" class="text-white px-4 py-2 rounded ">Projetos</a>
+                    <a href="/contato" class="text-white px-4 py-2 rounded ">Contato</a>
+                    <a href="/desenvolvedores" class="text-white px-4 py-2 rounded">Desenvolvedores</a>
                 </div>
         </div>
     </nav>
 
     <!-- Menu Dropdown (oculto em telas grandes, aparece em telas pequenas) -->
     <div id="menu" class="md:hidden bg-purple-800 px-6 py-2 hidden">
-        <a href="./home.php" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Início</a>
-        <a href="./professores.php" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Professores</a>
-        <a href="./projetos.php" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Projetos</a>
-        <a href="./contato.php" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Contato</a>
-        <a href="./desenvolvedores.php" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Desenvolvedores</a>
+        <a href="/home" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Início</a>
+        <a href="/professores" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Professores</a>
+        <a href="/projetos" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Projetos</a>
+        <a href="/contato" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Contato</a>
+        <a href="/desenvolvedores"
+            class="text-white block px-4 py-2 rounded hover:bg-purple-300">Desenvolvedores</a>
     </div>
 
     <!-- Script para alternar o menu -->
@@ -71,78 +72,78 @@
         </div>
     </header>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-5 sm:mx-10 my-10">
-    <!-- Card 1 -->
-    <div class="max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white">
-        <div class="flex justify-center p-4">
-            <img class="w-full max-w-xs rounded-lg" src="../img/foto vero.jpg"
-            alt="Foto do Luis">
+        <!-- Card 1 -->
+        <div class="max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white">
+            <div class="flex justify-center p-4">
+                <img class="w-full max-w-xs rounded-lg" src="../img/foto vero.jpg"
+                    alt="Foto do Luis">
+            </div>
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Luis Felipe Veronezi</div>
+                <p class="text-gray-700 text-base">
+                    1° Semestre
+                </p>
+            </div>
+            <div class="px-6 pt-4 pb-2 my-1 mb-3">
+                <a href="https://www.linkedin.com/in/luis-felipe-veronezi-57a942304/"
+                    class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300">
+                    <i class="fab fa-linkedin fa-2xl text-white mr-2"></i> LinkedIn
+                </a>
+                <a href="https://github.com/oVeronezi"
+                    class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 mt-2">
+                    <i class="fab fa-github fa-2xl text-white mr-2"></i> GitHub
+                </a>
+            </div>
         </div>
-        <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Luis Felipe Veronezi</div>
-            <p class="text-gray-700 text-base">
-                1° Semestre
-            </p>
+
+        <!-- Card 2 -->
+        <div class="max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white">
+            <div class="flex justify-center p-4">
+                <img class="w-80 h-80 max-w-xs rounded-lg" src="./1724849754036.jfif" alt="Foto do Leonardo">
+            </div>
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Leonardo Antoniassi</div>
+                <p class="text-gray-700 text-base">
+                    1° Semestre
+                </p>
+            </div>
+            <div class="px-6 pt-4 pb-2 my-1 mb-3">
+                <a href="https://www.linkedin.com/in/leonardo-antoniassi-46084a322/"
+                    class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300">
+                    <i class="fab fa-linkedin fa-2xl text-white mr-2"></i> LinkedIn
+                </a>
+                <a href="https://github.com/leoantoniassi"
+                    class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 mt-2">
+                    <i class="fab fa-github fa-2xl text-white mr-2"></i> GitHub
+                </a>
+            </div>
         </div>
-        <div class="px-6 pt-4 pb-2 my-1 mb-3">
-            <a href="https://www.linkedin.com/in/luis-felipe-veronezi-57a942304/"
-                class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300">
-                <i class="fab fa-linkedin fa-2xl text-white mr-2"></i> LinkedIn
-            </a>
-            <a href="https://github.com/oVeronezi"
-                class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 mt-2">
-                <i class="fab fa-github fa-2xl text-white mr-2"></i> GitHub
-            </a>
+
+        <!-- Card 3 -->
+        <div class="max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white">
+            <div class="flex justify-center p-4">
+                <img class="w-full max-w-xs rounded-lg" src="https://avatars.githubusercontent.com/u/179020682?v=4" alt="Imagem do Éricky">
+            </div>
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Éricky dos Santos</div>
+                <p class="text-gray-700 text-base">
+                    1° Semestre
+                </p>
+            </div>
+            <div class="px-6 pt-4 pb-2 my-1 mb-3">
+                <a href="https://www.linkedin.com/in/eriky-santos-6a32a1322/"
+                    class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300">
+                    <i class="fab fa-linkedin fa-2xl text-white mr-2"></i> LinkedIn
+                </a>
+                <a href="https://github.com/erikysantos"
+                    class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 mt-2">
+                    <i class="fab fa-github fa-2xl text-white mr-2"></i> GitHub
+                </a>
+            </div>
         </div>
     </div>
 
-    <!-- Card 2 -->
-    <div class="max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white">
-        <div class="flex justify-center p-4">
-            <img class="w-80 h-80 max-w-xs rounded-lg" src="./1724849754036.jfif" alt="Foto do Leonardo">
-        </div>
-        <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Leonardo Antoniassi</div>
-            <p class="text-gray-700 text-base">
-                1° Semestre
-            </p>
-        </div>
-        <div class="px-6 pt-4 pb-2 my-1 mb-3">
-            <a href="https://www.linkedin.com/in/leonardo-antoniassi-46084a322/"
-                class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300">
-                <i class="fab fa-linkedin fa-2xl text-white mr-2"></i> LinkedIn
-            </a>
-            <a href="https://github.com/leoantoniassi"
-                class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 mt-2">
-                <i class="fab fa-github fa-2xl text-white mr-2"></i> GitHub
-            </a>
-        </div>
-    </div>
 
-    <!-- Card 3 -->
-    <div class="max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white">
-        <div class="flex justify-center p-4">
-            <img class="w-full max-w-xs rounded-lg" src="https://avatars.githubusercontent.com/u/179020682?v=4" alt="Imagem do Éricky">
-        </div>
-        <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Éricky dos Santos</div>
-            <p class="text-gray-700 text-base">
-                1° Semestre
-            </p>
-        </div>
-        <div class="px-6 pt-4 pb-2 my-1 mb-3">
-            <a href="https://www.linkedin.com/in/eriky-santos-6a32a1322/"
-                class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300">
-                <i class="fab fa-linkedin fa-2xl text-white mr-2"></i> LinkedIn
-            </a>
-            <a href="https://github.com/erikysantos"
-                class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 mt-2">
-                <i class="fab fa-github fa-2xl text-white mr-2"></i> GitHub
-            </a>
-        </div>
-    </div>
-</div>
-
-    
     <!-- Footer -->
     <footer class="text-white py-4 mt-32">
         <div class="container mx-auto text-center">
