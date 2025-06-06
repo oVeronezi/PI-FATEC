@@ -13,10 +13,10 @@ services:
   db:
     image: mysql:8.0  # Usando a imagem oficial do MySQL
     environment:
-      MYSQL_ROOT_PASSWORD: 1238425wky22  # Senha do root
-      MYSQL_DATABASE: clinictrack  # Nome do banco de dados inicial
-      MYSQL_USER: gabriel  # Nome de usuário
-      MYSQL_PASSWORD: 123123w  # Senha do usuário
+      MYSQL_ROOT_PASSWORD: a1b2c3  # Senha do root
+      MYSQL_DATABASE: dbdsm  # Nome do banco de dados inicial
+      MYSQL_USER: admin  # Nome de usuário
+      MYSQL_PASSWORD: 2345meia78  # Senha do usuário
     ports:
       - "3307:3306"  # Porta que será exposta (se precisar acessar diretamente)
     volumes:
