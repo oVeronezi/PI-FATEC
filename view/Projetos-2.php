@@ -166,15 +166,15 @@
                                 Ferraz</a>
                         </div>
                         <div class="flex items-center space-x-3">
+                            <img src="https://avatars.githubusercontent.com/u/122622768?v=4"
+                                alt="Avatar Integrante" class="w-8 h-8 rounded-full">
+                            <a href="https://github.com/Gabriel-M-Coutinho" target="_blank" class="text-black hover:text-purple-800 font-medium">Gabriel Magina Coutinho</a>
+                        </div>
+                        <div class="flex items-center space-x-3">
                             <img src="https://avatars.githubusercontent.com/u/178056958?v=4" alt="Avatar"
                                 class="w-8 h-8 rounded-full">
                             <a href="https://github.com/wevertonryan" target="_blank"
                                 class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Weverton Ryan Nunes de Almeida Silva</a>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <img src="https://avatars.githubusercontent.com/u/122622768?v=4"
-                                alt="Avatar Integrante" class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/Gabriel-M-Coutinho" target="_blank" class="text-black hover:text-purple-800 font-medium">Gabriel Magina Coutinho</a>
                         </div>
                     </div>
                 </div>
@@ -207,14 +207,14 @@
                         <div class="flex items-center space-x-3">
                             <img src="https://avatars.githubusercontent.com/u/102433167?v=4" alt="Avatar Yasmim Sanchez"
                                 class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/YasmimSanchez-Coder"
+                            <a href="https://github.com/YasmimSanchez-Coder" target="_blank"
                                 class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Yasmim
                                 Sanchez</a>
                         </div>
                         <div class="flex items-center space-x-3">
                             <img src="https://avatars.githubusercontent.com/u/102433167?v=4" alt="Avatar Paulo Machado"
                                 class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/paulo-m-machado"
+                            <a href="https://github.com/paulo-m-machado" target="_blank"
                                 class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Paulo
                                 Machado</a>
                         </div>
@@ -224,7 +224,7 @@
                     </div>
                 </div>
                 <div class="px-6 pt-4 pb-4">
-                    <a href="https://github.com/paulo-m-machado/fatec-PI-girls-in-stem"
+                    <a href="https://github.com/paulo-m-machado/fatec-PI-girls-in-stem" target="_blank"
                         class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded text-sm sm:text-base">
                         Conhecer o Projeto
                     </a>

@@ -122,7 +122,7 @@
         <!-- Card 3 -->
         <div class="max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white">
             <div class="flex justify-center p-4">
-                <img class="w-full max-w-xs rounded-lg" src="" alt="Foto">
+                <img class="w-full max-w-xs rounded-lg" src="../img/foto joao.png" alt="Foto">
             </div>
             <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">João Pedro Padilha Fogagnolo</div>
@@ -145,7 +145,7 @@
         <!-- Card 4 -->
         <div class="max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white">
             <div class="flex justify-center p-4">
-                <img class="w-full max-w-xs rounded-lg" src="" alt="Foto">
+                <img class="w-full max-w-xs rounded-lg" src="../img/foto-pedro.png" alt="Foto">
             </div>
             <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">Pedro Vale Mineo</div>
