@@ -104,14 +104,13 @@
                     <p class="text-gray-700 text-sm sm:text-base font-semibold mt-4">Integrantes:</p>
                     <div class="space-y-3 mt-2">
                         <div class="flex items-center space-x-3">
-                            <img src="https://avatars.githubusercontent.com/u/181358493?v=4" alt="Avatar Maria Carolina"
+                            <img src="https://avatars.githubusercontent.com/u/99449012?v=4" alt="Avatar Maria Carolina"
                                 class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/Carol-morato" target="_blank"
-                                class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Maria Carolina
-                                Morato</a>
+                            <a href="https://github.com/kaiqsou" target="_blank"
+                                class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Kaique Onencio de Souza </a>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <img src="https://avatars.githubusercontent.com/u/181370670?v=4" alt="Avatar Marina Frankin"
+                            <img src="https://avatars.githubusercontent.com/u/181370670?v=4" alt="Avatar"
                                 class="w-8 h-8 rounded-full">
                             <a href="https://github.com/marinafrankin" target="_blank"
                                 class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Marina
@@ -240,7 +239,7 @@
 
     <footer class="text-white py-4 mt-28 ">
         <div class="container mx-auto text-center">
-            <p>&copy; 2024 Fatec Jaú</p>
+            <p>&copy; 2025 Fatec Jaú</p>
         </div>
     </footer>
 
