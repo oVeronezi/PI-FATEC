@@ -92,7 +92,7 @@
             <div
                 class="h-full flex flex-col max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white hover:text-purple-800">
                 <div class="flex justify-center p-4">
-                    <img class="w-full h-48 object-cover rounded-lg" src=".../img/img-fogo-zero.jfif"
+                    <img class="w-full h-48 object-cover rounded-lg" src="../img/img-fogo-zero.png"
                         alt="Imagem do Fogo-Zero">
                 </div>
                 <div class="px-6 py-4 flex-grow">
@@ -106,21 +106,21 @@
                         <div class="flex items-center space-x-3">
                             <img src="https://avatars.githubusercontent.com/u/181358493?v=4" alt="Avatar Maria Carolina"
                                 class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/Carol-morato"
+                            <a href="https://github.com/Carol-morato" target="_blank"
                                 class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Maria Carolina
                                 Morato</a>
                         </div>
                         <div class="flex items-center space-x-3">
                             <img src="https://avatars.githubusercontent.com/u/181370670?v=4" alt="Avatar Marina Frankin"
                                 class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/marinafrankin"
+                            <a href="https://github.com/marinafrankin" target="_blank"
                                 class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Marina
                                 Frankin</a>
                         </div>
                         <div class="flex items-center space-x-3">
                             <img src="https://avatars.githubusercontent.com/u/96202019?v=4" alt="Avatar Tamires Talier"
                                 class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/tamirestalier"
+                            <a href="https://github.com/tamirestalier" target="_blank"
                                 class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Tamires
                                 Talier</a>
                         </div>
@@ -137,52 +137,63 @@
 
 
 
-        <!-- Card 2 -->
+        <!-- Pi leadsearch -->
         <div class="w-full sm:w-1/2 lg:w-1/3 p-2">
             <div
                 class="h-full flex flex-col max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white hover:text-purple-800">
                 <div class="flex justify-center p-4">
-                    <img class="w-full h-48 object-cover rounded-lg" src="https://via.placeholder.com/300"
+                    <img class="w-full h-48 object-cover rounded-lg" src="../img/pi-leadsearch.jfif"
                         alt="Imagem do Projeto">
                 </div>
                 <div class="px-6 py-4 flex-grow">
-                    <div class="font-bold text-xl mb-2">Projeto </div>
+                    <div class="font-bold text-xl mb-2">LeadSearch </div>
                     <p class="text-gray-700 text-base">
-                        descrição projeto
+                        Projeto voltado para coleta de Leads
                     </p>
                     <p class="text-gray-700 text-base font-semibold mt-4">Integrantes:</p>
                     <div class="space-y-3 mt-2">
                         <div class="flex items-center space-x-3">
-                            <img src="https://p7.hiclipart.com/preview/442/477/305/computer-icons-user-profile-avatar-profile.jpg"
-                                alt="Avatar Integrante" class="w-8 h-8 rounded-full">
-                            <a href="#" class="text-black hover:text-purple-800 font-medium">Integrante 1</a>
+                            <img src="https://avatars.githubusercontent.com/u/102252078?v=4" alt="Avatar"
+                                class="w-8 h-8 rounded-full">
+                            <a href="https://github.com/BrunoozL" target="_blank"
+                                class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Bruno
+                                Righi</a>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <img src="https://p7.hiclipart.com/preview/442/477/305/computer-icons-user-profile-avatar-profile.jpg"
-                                alt="Avatar Integrante" class="w-8 h-8 rounded-full">
-                            <a href="#" class="text-black hover:text-purple-800 font-medium">Integrante 2</a>
+                            <img src="https://avatars.githubusercontent.com/u/181370729?v=4" alt="Avatar"
+                                class="w-8 h-8 rounded-full">
+                            <a href="https://github.com/BrunoFzx" target="_blank"
+                                class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Bruno
+                                Ferraz</a>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <img src="https://p7.hiclipart.com/preview/442/477/305/computer-icons-user-profile-avatar-profile.jpg"
+                            <img src="https://avatars.githubusercontent.com/u/178056958?v=4" alt="Avatar"
+                                class="w-8 h-8 rounded-full">
+                            <a href="https://github.com/wevertonryan" target="_blank"
+                                class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Weverton Ryan Nunes de Almeida Silva</a>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <img src="https://avatars.githubusercontent.com/u/122622768?v=4"
                                 alt="Avatar Integrante" class="w-8 h-8 rounded-full">
-                            <a href="#" class="text-black hover:text-purple-800 font-medium">Integrante 3</a>
+                            <a href="https://github.com/Gabriel-M-Coutinho" target="_blank" class="text-black hover:text-purple-800 font-medium">Gabriel Magina Coutinho</a>
                         </div>
                     </div>
                 </div>
                 <div class="px-6 pt-4 pb-4">
-                    <a href="#" class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded">
+                    <a href="https://github.com/Gabriel-M-Coutinho/pi2" target="_blank"
+                        class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded">
                         Conhecer o Projeto
                     </a>
                 </div>
             </div>
         </div>
 
-        <!-- Card 3 -->
+        <!-- PI girl in stem -->
         <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
             <div
                 class="h-full flex flex-col max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white hover:text-purple-800">
                 <div class="flex justify-center p-4">
-                    <img class="w-full h-48 object-cover rounded-lg" src=".../img/img-girsl-in-stem.jpg"
+                    <img class="w-full h-48 object-cover rounded-lg" src="../img/img-girsl-in-stem.jpg"
                         alt="Imagem do Card">
                 </div>
                 <div class="px-6 py-4 flex-grow">
@@ -209,11 +220,7 @@
                                 Machado</a>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <img src="https://avatars.githubusercontent.com/u/181370729?v=4" alt="Avatar Bruno Ferraz"
-                                class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/BrunoFzx"
-                                class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Bruno
-                                Ferraz</a>
+
                         </div>
                     </div>
                 </div>
