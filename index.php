@@ -85,6 +85,6 @@ if (isset($routes[$uri_limpa])) {
     $routes[$uri_limpa]();
 } else {
     http_response_code(404);
-    echo "404 - Página não encontrada. Verifique o caminho.";
+    echo "404 - Ñ tá achando man kkkkkkk.";
 }
 ?>
