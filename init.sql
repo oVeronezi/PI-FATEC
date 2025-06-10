@@ -1,39 +1,8 @@
-<?php
-abstract class Database
-{
-    protected $connection;
-
-    public function __construct()
-    {
-        $host = "db";
-        $user = "admin";
-        $password = "2345meia78";
-        $databaseName = "dbdsm";
-
-        try {
-
-            $pdo = new PDO("mysql:host=localhost", $user, $password);
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-
-            $pdo->exec("CREATE DATABASE IF NOT EXISTS $databaseName");
-            $pdo = null;
-
-
-            $this->connection = new PDO("mysql:host=$host;dbname=$databaseName", $user, $password);
-            $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-            $this->createTables();
-        } catch (PDOException $e) {
-            die("Connection or database creation error: " . $e->getMessage());
-        }
-    }
-
-    private function createTables()
-    {
-        //Se der erro, verificar se os arquivos estão iguais👍
-        $sql = "
-            -- Tabela Usuarios
+CREATE DATABASE IF NOT EXISTS dbdsm; 
+USE dbdsm;
+ 
+ 
+ -- Tabela Usuarios
 CREATE TABLE IF NOT EXISTS Usuarios (
     id_usuario BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
@@ -43,7 +12,7 @@ CREATE TABLE IF NOT EXISTS Usuarios (
     data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     data_exclusao TIMESTAMP NULL
 );
-
+INSERT INTO Usuarios (nome, email, senha) VALUES ('admin', 'admin@gmail.com', 'admin123');
 -- Tabela Alunos
 CREATE TABLE IF NOT EXISTS Alunos (
     id_aluno BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY, 
@@ -114,9 +83,3 @@ CREATE TABLE IF NOT EXISTS Projeto_Disciplina (
     FOREIGN KEY (id_projeto) REFERENCES ProjetosIntegradores(id_pi),
     FOREIGN KEY (id_disciplina) REFERENCES Disciplinas(id_disciplina)
 );
-        ";
-
-        $this->connection->exec($sql);
-    }
-}
-?>

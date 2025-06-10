@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -32,6 +36,7 @@
                 </div>
                 <!-- Links de navegação (visíveis em telas grandes) -->
                 <div class="hidden md:flex space-x-4">
+                    <a href="/login">logar</a>
                     <a href="/home" class="text-white px-4 py-2 rounded">Início</a>
                     <a href="/professores" class="text-white px-4 py-2 rounded">Professores</a>
                     <a href="/projetos" class="text-white px-4 py-2 rounded ">Projetos</a>
@@ -653,17 +658,15 @@
             </div>
         </div>
 
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 
-    <!-- Footer -->
-    <footer class="text-white py-4 mt-28">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2025 Fatec Jaú</p>
-        </div>
-    </footer>
-
+        <!-- Footer -->
+        <footer class="text-white py-4 mt-28">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2025 Fatec Jaú</p>
+            </div>
+        </footer>
 </body>
 
 </html>

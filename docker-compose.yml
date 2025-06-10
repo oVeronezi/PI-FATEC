@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   web:
     build: .
@@ -8,19 +6,19 @@ services:
     volumes:
       - .:/var/www/html
     depends_on:
-      - db  # Espera o MySQL estar pronto antes de iniciar o web
+      - db
 
   db:
-    image: mysql:8.0  # Usando a imagem oficial do MySQL
+    image: mysql:8.0
     environment:
-      MYSQL_ROOT_PASSWORD: a1b2c3  # Senha do root
-      MYSQL_DATABASE: dbdsm  # Nome do banco de dados inicial
-      MYSQL_USER: admin  # Nome de usuário
-      MYSQL_PASSWORD: 2345meia78  # Senha do usuário
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: dbdsm
+      
     ports:
-      - "3307:3306"  # Porta que será exposta (se precisar acessar diretamente)
+      - "3307:3306"
     volumes:
-      - mysql-data:/var/lib/mysql  # Volume persistente para o banco de dados
+      - mysql-data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 
 volumes:
   mysql-data:

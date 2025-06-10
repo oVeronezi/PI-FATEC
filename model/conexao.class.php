@@ -1,21 +1,18 @@
 <?php
-	abstract class Conexao
-	{
-		protected $db = null;
-		
-		public function __construct()
-		{
-			$parametros = "mysql:host=localhost;dbname=bancopi;charset=utf8mb4";
-			try
-			{
-				$this -> db = new PDO($parametros, "root", "");
-			}
-			catch (PDOException $e)
-			{
-				die("Problema com conexão do banco de dados");
-				echo $e -> getCode();
-				echo $e -> getMessage();
-			}
-		}
-	}
+    abstract class Conexao{
+        protected $db = null;
+
+        public function __construct() {
+            $parametros = "mysql:host=db;dbname=dbdsm;charset=utf8mb4";
+
+            try{
+                $this -> db = new PDO($parametros, "root", "1234");
+                echo "Conexão estabelecida com sucesso!<br>";
+            }
+
+            catch (PDOException $e){
+                die("Erro ao conectar com o banco de dados: " . $e->getMessage() . $e->getCode());
+            }
+        }
+    }
 ?>

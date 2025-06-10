@@ -1,12 +1,15 @@
 <?php
 session_start();
 
+
+
 // Define o baseurl como vazio, já que está na raiz
 $baseurl = '';
 
 // Importa os controllers
-require_once 'controller/user.controller.php';
+require_once 'controller/usuarioController.php';
 require_once 'controller/home.controller.php';
+
 
 // Obtém a URI requisitada (ex: /home ou /)
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
@@ -25,7 +28,12 @@ if ($uri_limpa === '' || $uri_limpa === '/') {
 
 // Define as rotas
 $routes = [
+   
+
     '/' => function () {
+
+        
+
         $controller = new HomeController();
         $controller->showHome();
     },
@@ -57,7 +65,10 @@ $routes = [
         require_once "view/desenvolvedores.php";
     },
     '/login' => function () {
+        
         require_once "view/login.php";
+        $Controller = new usuarioController();
+        $Controller -> login();
     },
     '/cadastro-aluno' => function () {
         require_once "view/cadastro-aluno.php";
@@ -85,6 +96,6 @@ if (isset($routes[$uri_limpa])) {
     $routes[$uri_limpa]();
 } else {
     http_response_code(404);
-    echo "404 - Ñ tá achando man kkkkkkk.";
+    echo "404 - Página não encontrada. Verifique o caminho.";
 }
 ?>

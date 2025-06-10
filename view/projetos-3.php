@@ -11,12 +11,12 @@
 
 <body class="flex flex-col min-h-screen">
 
-    <!-- Navbar -->
+<!-- Navbar -->
     <nav class="pt-2">
         <div class="container mx-auto flex justify-between items-center px-4">
             <!-- Logo ou nome do site -->
             <!-- <div class="text-white text-lg font-bold">Fatec Jaú</div> -->
-            <img class="logo" src="./img/logodsm-branco.png" alt="logodsm-branco">
+            <img class="logo" src="../img/logodsm-branco.png" alt="logodsm-branco">
 
             <!-- Menu hamburguer (visível em telas pequenas) -->
             <nav>
@@ -31,21 +31,21 @@
                 </div>
                 <!-- Links de navegação (visíveis em telas grandes) -->
                 <div class="hidden md:flex space-x-4">
-                    <a href="/home" class="text-white px-4 py-2 rounded">Início</a>
-                    <a href="/professores" class="text-white px-4 py-2 rounded">Professores</a>
-                    <a href="/projetos" class="text-white px-4 py-2 rounded ">Projetos</a>
-                    <a href="/contato" class="text-white px-4 py-2 rounded ">Contato</a>
-                    <a href="/desenvolvedores" class="text-white px-4 py-2 rounded">Desenvolvedores</a>
+                    <a href="./home.php" class="text-white px-4 py-2 rounded">Início</a>
+                    <a href="./professores.php" class="text-white px-4 py-2 rounded">Professores</a>
+                    <a href="./projetos.php" class="text-white px-4 py-2 rounded ">Projetos</a>
+                    <a href="./contato.php" class="text-white px-4 py-2 rounded ">Contato</a>
+                    <a href="./desenvolvedores.php" class="text-white px-4 py-2 rounded">Desenvolvedores</a>
                 </div>
         </div>
     </nav>
 
     <div id="menu" class="md:hidden bg-purple-800 px-6 py-2 hidden">
-        <a href="./home" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Início</a>
-        <a href="./professores" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Professores</a>
-        <a href="./projetos" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Projetos</a>
-        <a href="./contato" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Contato</a>
-        <a href="./desenvolvedores"
+        <a href="./home.php" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Início</a>
+        <a href="./professores.php" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Professores</a>
+        <a href="./projetos.php" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Projetos</a>
+        <a href="./contato.php" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Contato</a>
+        <a href="./desenvolvedores.php"
             class="text-white block px-4 py-2 rounded hover:bg-purple-300">Desenvolvedores</a>
     </div>
 
@@ -69,15 +69,15 @@
         <div class="max-w-6xl mx-auto px-4 py-2 ">
             <ul class="flex space-x-4 justify-center">
                 <li>
-                    <a href="./projetos" class="font-bold text-black px-4 py-2 rounded hover:text-purple-800">1°
+                    <a href="./projetos.php" class="font-bold text-black px-4 py-2 rounded hover:text-purple-800">1°
                         Semestre</a>
                 </li>
                 <li>
-                    <a href="./projetos-2" class="font-bold text-black px-4 py-2 rounded hover:text-purple-800">2°
+                    <a href="./Projetos-2.php" class="font-bold text-black px-4 py-2 rounded hover:text-purple-800">2°
                         Semestre</a>
                 </li>
                 <li>
-                    <a href="./projetos-3" class="font-bold text-black px-4 py-2 rounded hover:text-purple-800">3°
+                    <a href="./projetos-3.php" class="font-bold text-black px-4 py-2 rounded hover:text-purple-800">3°
                         Semestre</a>
                 </li>
             </ul>
@@ -208,7 +208,7 @@
 
     <footer class="text-white py-4 mt-28 ">
         <div class="container mx-auto text-center">
-            <p>&copy; 2025 Fatec Jaú</p>
+            <p>&copy; 2024 Fatec Jaú</p>
         </div>
     </footer>
 
