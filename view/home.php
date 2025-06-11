@@ -36,7 +36,7 @@
                 </div>
                 <!-- Links de navegação (visíveis em telas grandes) -->
                 <div class="hidden md:flex space-x-4">
-                    <a href="/login">logar</a>
+                    <a href="/login" class="text-white px-4 py-2 rounded">logar</a>
                     <a href="/home" class="text-white px-4 py-2 rounded">Início</a>
                     <a href="/professores" class="text-white px-4 py-2 rounded">Professores</a>
                     <a href="/projetos" class="text-white px-4 py-2 rounded ">Projetos</a>
@@ -48,6 +48,7 @@
 
     <!-- Menu Dropdown (oculto em telas grandes, aparece em telas pequenas) -->
     <div id="menu" class="md:hidden bg-purple-800 px-6 py-2 hidden">
+        <a href="/login" class="text-white block px-4 py-2 rounded hover:bg-purple-300">logar</a>
         <a href="/home" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Início</a>
         <a href="/professores" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Professores</a>
         <a href="/projetos" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Projetos</a>
@@ -643,30 +644,29 @@
                     <h2 class="text-xl font-semibold text-gray-800 mt-4">Técnicas de Programação I</h2>
                     <p class="text-gray-700 mb-4">
                         Esta disciplina introduz conceitos essenciais de lógica e técnicas de programação. Os alunos
-                        aprendem estruturas de controle, manipulação de dados e resolução de problemas usando linguagens
-                        de programação modernas.
+                        aprendem estruturas de controle, manipulação de dados e resolução de problemas usando PHP.
                     </p>
 
                     <h2 class="text-xl font-semibold text-gray-800 mt-4">Matemática para Computação
                     </h2>
                     <p class="text-gray-700 mb-4">
                         Esta disciplina cobre fundamentos matemáticos necessários para resolver problemas
-                        computacionais, incluindo lógica, álgebra linear, teoria dos grafos e análise combinatória,
+                        computacionais, incluindo lógica, análise combinatória e matemática discreta,
                         preparando os alunos para enfrentar desafios técnicos e analíticos.
                     </p>
                 </div>
             </div>
         </div>
 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-
-        <!-- Footer -->
-        <footer class="text-white py-4 mt-28">
-            <div class="container mx-auto text-center">
-                <p>&copy; 2025 Fatec Jaú</p>
-            </div>
-        </footer>
+    <!-- Footer -->
+    <footer class="text-white py-4 mt-28">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Fatec Jaú</p>
+        </div>
+    </footer>
 </body>
 
 </html>

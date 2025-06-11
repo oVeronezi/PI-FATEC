@@ -24,8 +24,23 @@ CREATE TABLE IF NOT EXISTS Alunos (
 -- Tabela Professores
 CREATE TABLE IF NOT EXISTS Professores (
     id_professor BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    linkedin VARCHAR(255),
+    foto_url VARCHAR(1024),
+    disciplina VARCHAR(255),
     lattes VARCHAR(2048) -- Link do currículo no Lattes
 );
+
+-- Inserir usuário (deixe o AUTO_INCREMENT gerar o id)
+INSERT INTO Usuarios (nome, email, senha, ultimo_acesso, data_cadastro, data_exclusao)
+VALUES ('Alex Paulo Lopes Batista', 'alex.batista@fatec.sp.gov.br', 'senha123', NOW(), NOW(), NULL);
+
+-- Pegar o id gerado para o usuário
+SET @ultimo_id_usuario = LAST_INSERT_ID();
+
+-- Inserir o professor usando o id gerado para o usuário
+INSERT INTO Professores (id_professor, linkedin, lattes, foto_url, disciplina)
+VALUES (@ultimo_id_usuario, 'https://www.linkedin.com/in/alex-paulo-lopes-batista-a2936524/', 'http://lattes.cnpq.br/7239785869687027', '../img/foto_alex.png', 'desenvolvimento web');
+
 
 -- Tabela Disciplinas
 CREATE TABLE IF NOT EXISTS Disciplinas (

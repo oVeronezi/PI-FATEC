@@ -77,8 +77,8 @@
                 <li class="flex justify-between gap-x-6 py-1">
                     <div class="flex min-w-0 gap-x-4">
                         <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
-                            src="./img/alekao.png"
-                            alt="Foto do Alekão">
+                            src="../img/foto alex.png"
+                            alt="Foto Alekão" class="w-8 h-8 rounded-full">
                         <div class="min-w-0 flex-auto">
                             <p class="text-sm/6 font-semibold">Alex Paulo Lopes Batista</p>
                             <p class="mt-1 truncate text-xs/5">alex.batista@fatec.sp.gov.br</p>
@@ -230,9 +230,8 @@
                 <!-- prof Vânia -->
                 <li class="flex justify-between gap-x-6 py-5">
                     <div class="flex min-w-0 gap-x-4">
-                        <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
-                            src="../img/vania.png"
-                            alt="foto Vania">
+                        <img src="https://p7.hiclipart.com/preview/442/477/305/computer-icons-user-profile-avatar-profile.jpg"
+                            alt="Avatar Integrante" class="w-8 h-8 rounded-full">
                         <div class="min-w-0 flex-auto">
                             <p class="text-sm/6 font-semibold">Vânia Somaio Teixeira</p>
                             <p class="mt-1 truncate text-xs/5">vania.teixeira@fatec.sp.gov.br</p>

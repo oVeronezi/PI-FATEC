@@ -92,7 +92,7 @@
             <div
                 class="h-full flex flex-col max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white hover:text-purple-800">
                 <div class="flex justify-center p-4">
-                    <img class="w-full h-48 object-cover rounded-lg" src=".../img/img-fogo-zero.jfif"
+                    <img class="w-full h-48 object-cover rounded-lg" src="../img/img-fogo-zero.png"
                         alt="Imagem do Fogo-Zero">
                 </div>
                 <div class="px-6 py-4 flex-grow">
@@ -104,30 +104,29 @@
                     <p class="text-gray-700 text-sm sm:text-base font-semibold mt-4">Integrantes:</p>
                     <div class="space-y-3 mt-2">
                         <div class="flex items-center space-x-3">
-                            <img src="https://avatars.githubusercontent.com/u/181358493?v=4" alt="Avatar Maria Carolina"
+                            <img src="https://avatars.githubusercontent.com/u/99449012?v=4" alt="Avatar Maria Carolina"
                                 class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/Carol-morato"
-                                class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Maria Carolina
-                                Morato</a>
+                            <a href="https://github.com/kaiqsou" target="_blank"
+                                class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Kaique Onencio de Souza </a>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <img src="https://avatars.githubusercontent.com/u/181370670?v=4" alt="Avatar Marina Frankin"
+                            <img src="https://avatars.githubusercontent.com/u/181370670?v=4" alt="Avatar"
                                 class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/marinafrankin"
+                            <a href="https://github.com/marinafrankin" target="_blank"
                                 class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Marina
                                 Frankin</a>
                         </div>
                         <div class="flex items-center space-x-3">
                             <img src="https://avatars.githubusercontent.com/u/96202019?v=4" alt="Avatar Tamires Talier"
                                 class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/tamirestalier"
+                            <a href="https://github.com/tamirestalier" target="_blank"
                                 class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Tamires
                                 Talier</a>
                         </div>
                     </div>
                 </div>
                 <div class="px-6 pt-4 pb-4">
-                    <a href="https://github.com/tamirestalier/Fogo-Zero"
+                    <a href="https://github.com/tamirestalier/Fogo-Zero" target="_blank"
                         class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded text-sm sm:text-base">
                         Conhecer o Projeto
                     </a>
@@ -137,68 +136,63 @@
 
 
 
-        <!-- Card 2 -->
-        <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
+        <!-- Pi leadsearch -->
+        <div class="w-full sm:w-1/2 lg:w-1/3 p-2">
             <div
                 class="h-full flex flex-col max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white hover:text-purple-800">
                 <div class="flex justify-center p-4">
-                    <img class="w-full h-48 object-cover rounded-lg" src=".../img/img-ricardo-auto-detail.jfif"
-                        alt="Imagem do Card">
+                    <img class="w-full h-48 object-cover rounded-lg" src="../img/pi-leadsearch.jfif"
+                        alt="Imagem do Projeto">
                 </div>
                 <div class="px-6 py-4 flex-grow">
-                    <div class="font-bold text-lg sm:text-xl mb-2">Projeto Ricardo Auto Detail</div>
-                    <p class="text-sm sm:text-base text-gray-700">
-                        Site portfólio para divulgação da empresa de detalhamento automotivo e gerenciamento de clientes
-                        agendados.
+                    <div class="font-bold text-xl mb-2">LeadSearch </div>
+                    <p class="text-gray-700 text-base">
+                        Projeto voltado para coleta de Leads
                     </p>
-                    <p class="text-gray-700 text-sm sm:text-base font-semibold mt-4">Integrantes:</p>
+                    <p class="text-gray-700 text-base font-semibold mt-4">Integrantes:</p>
                     <div class="space-y-3 mt-2">
                         <div class="flex items-center space-x-3">
-                            <img src="https://avatars.githubusercontent.com/u/102252078?v=4" alt="Avatar Bruno Righi"
+                            <img src="https://avatars.githubusercontent.com/u/102252078?v=4" alt="Avatar"
                                 class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/BrunoozL"
+                            <a href="https://github.com/BrunoozL" target="_blank"
                                 class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Bruno
                                 Righi</a>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <img src="https://avatars.githubusercontent.com/u/120916354?v=4"
-                                alt="Avatar Cainã Bertolini" class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/cainanbermon"
-                                class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Cainã
-                                Bertolini</a>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <img src="https://avatars.githubusercontent.com/u/178056958?v=4" alt="Avatar Weverton Ryan"
+                            <img src="https://avatars.githubusercontent.com/u/181370729?v=4" alt="Avatar"
                                 class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/wevertonryan"
-                                class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Weverton
-                                Ryan</a>
+                            <a href="https://github.com/BrunoFzx" target="_blank"
+                                class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Bruno
+                                Ferraz</a>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <img src="https://avatars.githubusercontent.com/u/166722091?v=4"
-                                alt="Avatar Vinicius Abilio" class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/ViniciusAbilio23"
-                                class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Vinicius
-                                Abilio</a>
+                            <img src="https://avatars.githubusercontent.com/u/122622768?v=4"
+                                alt="Avatar Integrante" class="w-8 h-8 rounded-full">
+                            <a href="https://github.com/Gabriel-M-Coutinho" target="_blank" class="text-black hover:text-purple-800 font-medium">Gabriel Magina Coutinho</a>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <img src="https://avatars.githubusercontent.com/u/178056958?v=4" alt="Avatar"
+                                class="w-8 h-8 rounded-full">
+                            <a href="https://github.com/wevertonryan" target="_blank"
+                                class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Weverton Ryan Nunes de Almeida Silva</a>
                         </div>
                     </div>
                 </div>
                 <div class="px-6 pt-4 pb-4">
-                    <a href="https://github.com/cainanbermon/ricardo-detail-auto-PI"
-                        class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded text-sm sm:text-base">
+                    <a href="https://github.com/Gabriel-M-Coutinho/pi2" target="_blank"
+                        class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded">
                         Conhecer o Projeto
                     </a>
                 </div>
             </div>
         </div>
 
-
-        <!-- Card 3 -->
+        <!-- PI girl in stem -->
         <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
             <div
                 class="h-full flex flex-col max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white hover:text-purple-800">
                 <div class="flex justify-center p-4">
-                    <img class="w-full h-48 object-cover rounded-lg" src=".../img/img-girsl-in-stem.jpg"
+                    <img class="w-full h-48 object-cover rounded-lg" src="../img/img-girsl-in-stem.jpg"
                         alt="Imagem do Card">
                 </div>
                 <div class="px-6 py-4 flex-grow">
@@ -213,28 +207,24 @@
                         <div class="flex items-center space-x-3">
                             <img src="https://avatars.githubusercontent.com/u/102433167?v=4" alt="Avatar Yasmim Sanchez"
                                 class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/YasmimSanchez-Coder"
+                            <a href="https://github.com/YasmimSanchez-Coder" target="_blank"
                                 class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Yasmim
                                 Sanchez</a>
                         </div>
                         <div class="flex items-center space-x-3">
                             <img src="https://avatars.githubusercontent.com/u/102433167?v=4" alt="Avatar Paulo Machado"
                                 class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/paulo-m-machado"
+                            <a href="https://github.com/paulo-m-machado" target="_blank"
                                 class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Paulo
                                 Machado</a>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <img src="https://avatars.githubusercontent.com/u/181370729?v=4" alt="Avatar Bruno Ferraz"
-                                class="w-8 h-8 rounded-full">
-                            <a href="https://github.com/BrunoFzx"
-                                class="text-black hover:text-purple-800 font-medium text-sm sm:text-base">Bruno
-                                Ferraz</a>
+
                         </div>
                     </div>
                 </div>
                 <div class="px-6 pt-4 pb-4">
-                    <a href="https://github.com/paulo-m-machado/fatec-PI-girls-in-stem"
+                    <a href="https://github.com/paulo-m-machado/fatec-PI-girls-in-stem" target="_blank"
                         class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded text-sm sm:text-base">
                         Conhecer o Projeto
                     </a>
@@ -249,7 +239,7 @@
 
     <footer class="text-white py-4 mt-28 ">
         <div class="container mx-auto text-center">
-            <p>&copy; 2024 Fatec Jaú</p>
+            <p>&copy; 2025 Fatec Jaú</p>
         </div>
     </footer>
 

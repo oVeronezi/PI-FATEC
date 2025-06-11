@@ -75,13 +75,13 @@
         <!-- Card 1 -->
         <div class="max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white">
             <div class="flex justify-center p-4">
-                <img class="w-full max-w-xs rounded-lg" src="../img/foto vero.jpg"
+                <img class="w-full max-w-xs rounded-lg" src="../img/foto luis.jpg"
                     alt="Foto do Luis">
             </div>
             <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">Luis Felipe Veronezi</div>
                 <p class="text-gray-700 text-base">
-                    1° Semestre
+                    2° Semestre
                 </p>
             </div>
             <div class="px-6 pt-4 pb-2 my-1 mb-3">
@@ -104,7 +104,7 @@
             <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">Leonardo Antoniassi</div>
                 <p class="text-gray-700 text-base">
-                    1° Semestre
+                    2° Semestre
                 </p>
             </div>
             <div class="px-6 pt-4 pb-2 my-1 mb-3">
@@ -119,6 +119,51 @@
             </div>
         </div>
 
+        <!-- Card 3 -->
+        <div class="max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white">
+            <div class="flex justify-center p-4">
+                <img class="w-full max-w-xs rounded-lg" src="../img/foto joao.png" alt="Foto">
+            </div>
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">João Pedro Padilha Fogagnolo</div>
+                <p class="text-gray-700 text-base">
+                    2° Semestre
+                </p>
+            </div>
+            <div class="px-6 pt-4 pb-2 my-1 mb-3">
+                <a href="" target="_blank"
+                    class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300">
+                    <i class="fab fa-linkedin fa-2xl text-white mr-2"></i> LinkedIn
+                </a>
+                <a href="" target="_blank"
+                    class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 mt-2">
+                    <i class="fab fa-github fa-2xl text-white mr-2"></i> GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white">
+            <div class="flex justify-center p-4">
+                <img class="w-full max-w-xs rounded-lg" src="../img/foto-pedro.png" alt="Foto">
+            </div>
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Pedro Vale Mineo</div>
+                <p class="text-gray-700 text-base">
+                    2° Semestre
+                </p>
+            </div>
+            <div class="px-6 pt-4 pb-2 my-1 mb-3">
+                <a href="" target="_blank"
+                    class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300">
+                    <i class="fab fa-linkedin fa-2xl text-white mr-2"></i> LinkedIn
+                </a>
+                <a href="" target="_blank"
+                    class="flex items-center justify-center bg-purple-600 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition duration-300 mt-2">
+                    <i class="fab fa-github fa-2xl text-white mr-2"></i> GitHub
+                </a>
+            </div>
+        </div>
     </div>
 
 
