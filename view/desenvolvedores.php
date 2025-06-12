@@ -75,7 +75,7 @@
         <!-- Card 1 -->
         <div class="max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white">
             <div class="flex justify-center p-4">
-                <img class="w-full max-w-xs rounded-lg" src="../img/foto vero.jpg"
+                <img class="w-full max-w-xs rounded-lg" src="../img/foto luis.jpg"
                     alt="Foto do Luis">
             </div>
             <div class="px-6 py-4">

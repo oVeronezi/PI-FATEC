@@ -76,7 +76,8 @@
                 <!-- Prof Alex Paulo -->
                 <li class="flex justify-between gap-x-6 py-1">
                     <div class="flex min-w-0 gap-x-4">
-                        <img src="https://p7.hiclipart.com/preview/442/477/305/computer-icons-user-profile-avatar-profile.jpg"
+                        <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
+                            src="../img/foto alex.png"
                             alt="Foto Alekão" class="w-8 h-8 rounded-full">
                         <div class="min-w-0 flex-auto">
                             <p class="text-sm/6 font-semibold">Alex Paulo Lopes Batista</p>
