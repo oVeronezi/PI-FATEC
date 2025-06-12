@@ -1,13 +1,17 @@
 <?php
-
-require_once 'model/usuarios.class.php';
-require_once 'model/user.dao.php';
+require_once 'model/Usuarios.class.php';
+require_once 'model/usuarioDAO.class.php';
 
 class HomeController
 {
 
     public function showHome()
     {
+        if (!isset($_SESSION)) {
+        
+       
+        }
+        
         require_once 'view/home.php';
     }
 
@@ -15,6 +19,11 @@ class HomeController
     {
 
         require_once 'view/register_form';
+    }
+
+    public function showLogin()
+    {
+        require_once 'view/login.php';
     }
 
 }
