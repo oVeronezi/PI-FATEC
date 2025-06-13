@@ -69,12 +69,6 @@ $routes = [
         $Controller->login();
         require_once "view/login.php";
     },
-    '/logout' => function () {
-        $Controller = new usuarioController();
-        $Controller->logout();
-       
-    },
-
     '/cadastro-aluno' => function () {
         require_once "view/cadastro-aluno.php";
     },
@@ -98,6 +92,10 @@ $routes = [
     },
     '/mensagem-pi-cadastrado' => function () {
         require_once "view/mensagem-pi-cadastrado.php";
+    },
+    '/logout' => function () {
+        $control = new usuarioController();
+        $control->logout();
     },
     
 

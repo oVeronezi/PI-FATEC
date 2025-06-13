@@ -43,7 +43,7 @@
             
             $_SESSION = array(); // Limpa a sessão
             session_destroy(); // Destroi a sessão
-            header("Location:index.php");
+            header("Location: /home");
             die(); // Encerra o script
         }// Fim do método logout
     }// Fim da classe usuarioController
