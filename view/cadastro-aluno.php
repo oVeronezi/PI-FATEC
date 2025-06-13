@@ -17,7 +17,8 @@
         <div class="max-w-3xl w-full bg-white p-6 rounded-lg shadow-lg">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Cadastro de Alunos</h2>
 
-            <form>
+            <form action="../controller/AlunosController.php" method="POST">
+
                 <!-- Nome Completo -->
                 <div class="mb-4">
                     <label for="nome_completo" class="block text-gray-700 font-medium">Nome Completo</label>
@@ -57,17 +58,13 @@
                         class="w-full mt-2 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 ring-purple-600 placeholder:text-gray-500">
                 </div>
 
-                <!-- Botão de Enviar -->
-                <!-- <div class="mb-4 text-center">
-                    <button
-                        class="w-full bg-purple-600 text-white p-3 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600">
-                        <a href="./mensagem-cadastro-enviada.php">Cadastrar</a>
-                    </button>
-                </div> -->
-
                 <div class="mb-4 text-center">
-                    <a href="./mensagem-aluno-cadastrado-enviado.php" class="bg-purple-700 p-2 pr-10 pl-10 rounded-md text-white font-bold hover:bg-purple-600">Cadastrar</a>
+                    <button type="submit"
+                        class="w-full bg-purple-600 text-white p-3 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600">
+                        Cadastrar
+                    </button>
                 </div>
+
 
                 <!-- Botão Voltar -->
                 <div class="text-center">

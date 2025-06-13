@@ -98,8 +98,8 @@ $routes = [
     },
     '/mensagem-pi-cadastrado' => function () {
         require_once "view/mensagem-pi-cadastrado.php";
-    }
-
+    },
+    
 
 ];
 

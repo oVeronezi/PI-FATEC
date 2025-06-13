@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS dbdsm; 
+CREATE DATABASE IF NOT EXISTS dbdsm CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE dbdsm;
  
  
@@ -38,7 +38,7 @@ VALUES ('Alex Paulo Lopes Batista', 'alex.batista@fatec.sp.gov.br', NOW(), NOW()
 SET @ultimo_id_usuario = LAST_INSERT_ID();
 
 INSERT INTO Professores (id_professor, linkedin, lattes, foto_url, disciplina)
-VALUES (@ultimo_id_usuario, 'https://www.linkedin.com/in/alex-paulo-lopes-batista-a2936524/', 'http://lattes.cnpq.br/7239785869687027', '../img/foto_alex.png', 'desenvolvimento web');
+VALUES (@ultimo_id_usuario, 'https://www.linkedin.com/in/alex-paulo-lopes-batista-a2936524/', 'http://lattes.cnpq.br/7239785869687027', '../img/foto alex.png', 'desenvolvimento web');
 
 INSERT INTO Usuarios (nome, email, ultimo_acesso, data_cadastro, data_exclusao)
 VALUES ('Anderson Ferreira', 'andersonf.fernandes@fatec.sp.gov.br', NOW(), NOW(), NULL);
