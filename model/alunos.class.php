@@ -1,80 +1,49 @@
 <?php
-// É importante garantir que o arquivo da classe pai seja incluído.
-// O caminho pode precisar de ajuste dependendo da sua estrutura de pastas.
-require_once 'Usuarios.class.php';
+// Arquivo: /model/Aluno.class.php
+
+require_once 'usuarios.class.php';
 
 class Aluno extends Usuarios
 {
-    // Propriedades específicas do Aluno
-    private string $linkedin;
+    private string $ra;
+    private int $semestre; // Adicionado de volta
     private string $github;
-    private int $semestre;
-
-    // Propriedades que podem ou não ser usadas agora, mas fazem parte da classe
-    private int $id_alunos;
-    private int $RA;
+    private string $linkedin;
 
     public function __construct(
         string $nome = "",
         string $email = "",
+        string $ra = "",
+        int $semestre = 0, // Adicionado de volta
         string $linkedin = "",
-        string $github = "",
-        int $semestre = 0
+        string $github = ""
     ) {
-        // 1. Chama o construtor da classe pai (Usuarios) para definir nome e email
-        parent::__construct(0, $nome, $email, ""); // Passamos IDs e senha vazios por enquanto
+        // Agora não passamos mais a senha para o construtor pai
+        parent::__construct(0, $nome, $email, null); // Enviando null para a senha
 
-        // 2. Define as propriedades específicas desta classe (Aluno)
+        // Definimos as propriedades específicas do Aluno
+        $this->ra = $ra;
+        $this->semestre = $semestre; // Adicionado de volta
         $this->linkedin = $linkedin;
         $this->github = $github;
-        $this->semestre = $semestre;
     }
 
-    // Getters e Setters continuam os mesmos...
-
-    public function getIdAlunos(): int
+    // Getters
+    public function getRa(): string
     {
-        return $this->id_alunos;
+        return $this->ra;
     }
-
-    public function getRA(): int
+    public function getSemestre(): int
     {
-        return $this->RA;
-    }
-
+        return $this->semestre;
+    } // Adicionado de volta
     public function getGithub(): string
     {
         return $this->github;
     }
-
     public function getLinkedin(): string
     {
         return $this->linkedin;
-    }
-
-    public function getSemestre(): int
-    {
-        return $this->semestre;
-    }
-
-    public function setRA(int $RA): void
-    {
-        $this->RA = $RA;
-    }
-
-    public function setGithub(string $github): void
-    {
-        $this->github = $github;
-    }
-
-    public function setLinkedin(string $linkedin): void
-    {
-        $this->linkedin = $linkedin;
-    }
-
-    public function setSemestre(int $semestre): void
-    {
-        $this->semestre = $semestre;
     }
 }
 ?>
