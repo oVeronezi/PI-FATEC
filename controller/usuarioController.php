@@ -17,14 +17,21 @@
                 if(count($retorno) > 0)//encontrou usuario
                 {
                    
-                   die(); // Encerra o script
+                 if (headers_sent($file, $line)) {
+                     die("Headers já enviados em $file na linha $line");
+                 }
+                    $_SESSION["nome"] = $retorno[0] -> nome;
+                    
+                    header("Location: /home");
+                    exit;
+
                 }
                 else
                 {
+                    // Se não encontrou o usuário, exibe uma mensagem de erro
                     echo "Usuário ou senha inválidos!";
-                    header("Location: /login");
+                    
                     die(); // Encerra o script
-            
                 }
             }
             

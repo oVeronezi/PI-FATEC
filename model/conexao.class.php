@@ -7,7 +7,7 @@
 
             try{
                 $this -> db = new PDO($parametros, "root", "1234");
-                echo "Conexão estabelecida com sucesso!<br>";
+                
             }
 
             catch (PDOException $e){

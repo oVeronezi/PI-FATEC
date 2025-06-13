@@ -65,11 +65,16 @@ $routes = [
         require_once "view/desenvolvedores.php";
     },
     '/login' => function () {
-
-        require_once "view/login.php";
         $Controller = new usuarioController();
         $Controller->login();
+        require_once "view/login.php";
     },
+    '/logout' => function () {
+        $Controller = new usuarioController();
+        $Controller->logout();
+       
+    },
+
     '/cadastro-aluno' => function () {
         require_once "view/cadastro-aluno.php";
     },
