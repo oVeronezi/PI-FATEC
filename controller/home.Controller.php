@@ -18,7 +18,7 @@ class HomeController
     public function showRegisterForm()
     {
 
-        require_once 'view/register_form';
+        require_once 'view/register_form.php';
     }
 
     public function showLogin()
