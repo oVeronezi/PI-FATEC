@@ -32,13 +32,69 @@ CREATE TABLE IF NOT EXISTS Professores (
     lattes VARCHAR(2048)
 );
 
-INSERT INTO Usuarios (nome, email, senha, ultimo_acesso, data_cadastro, data_exclusao)
-VALUES ('Alex Paulo Lopes Batista', 'alex.batista@fatec.sp.gov.br', 'senha123', NOW(), NOW(), NULL);
+INSERT INTO Usuarios (nome, email, ultimo_acesso, data_cadastro, data_exclusao)
+VALUES ('Alex Paulo Lopes Batista', 'alex.batista@fatec.sp.gov.br', NOW(), NOW(), NULL);
 
 SET @ultimo_id_usuario = LAST_INSERT_ID();
 
 INSERT INTO Professores (id_professor, linkedin, lattes, foto_url, disciplina)
 VALUES (@ultimo_id_usuario, 'https://www.linkedin.com/in/alex-paulo-lopes-batista-a2936524/', 'http://lattes.cnpq.br/7239785869687027', '../img/foto_alex.png', 'desenvolvimento web');
+
+INSERT INTO Usuarios (nome, email, ultimo_acesso, data_cadastro, data_exclusao)
+VALUES ('Anderson Ferreira', 'andersonf.fernandes@fatec.sp.gov.br', NOW(), NOW(), NULL);
+
+SET @ultimo_id_usuario = LAST_INSERT_ID();
+
+INSERT INTO Professores (id_professor, linkedin, lattes, foto_url, disciplina)
+VALUES (@ultimo_id_usuario, 'https://www.linkedin.com/in/anderson-ferreira-fernandes-89456937/', 'http://lattes.cnpq.br/1627329996472089', '../img/anderson.png', 'Design Digital');
+
+INSERT INTO Usuarios (nome, email, ultimo_acesso, data_cadastro, data_exclusao)
+VALUES ('Aparecida Maria Zem Lopes', 'aparecida.lopes01@fatec.sp.gov.br', NOW(), NOW(), NULL);
+
+SET @ultimo_id_usuario = LAST_INSERT_ID();
+
+INSERT INTO Professores (id_professor, linkedin, lattes, foto_url, disciplina)
+VALUES (@ultimo_id_usuario, 'https://www.linkedin.com/in/cida-zem-52936a34/', 'http://lattes.cnpq.br/6123540746643830', '../img/cida.png', 'Engenharia de Software');
+
+INSERT INTO Usuarios (nome, email, ultimo_acesso, data_cadastro, data_exclusao)
+VALUES ('Hélio Luis da Silva Rodrigues', 'helio.rodrigues@fatec.sp.gov.br', NOW(), NOW(), NULL);
+
+SET @ultimo_id_usuario = LAST_INSERT_ID();
+
+INSERT INTO Professores (id_professor, linkedin, lattes, foto_url, disciplina)
+VALUES (@ultimo_id_usuario, 'https://www.linkedin.com/in/cognus/', 'http://lattes.cnpq.br/9183639307001530', '../img/helio.png', 'Banco De Dados');
+
+INSERT INTO Usuarios (nome, email, ultimo_acesso, data_cadastro, data_exclusao)
+VALUES ('Paulo Henrique Buscariollo', 'phb.jau@fatec.sp.gov.br', NOW(), NOW(), NULL);
+
+SET @ultimo_id_usuario = LAST_INSERT_ID();
+
+INSERT INTO Professores (id_professor, linkedin, lattes, foto_url, disciplina)
+VALUES (@ultimo_id_usuario, 'https://www.linkedin.com/in/paulo-buscariollo-b6898921/', 'http://lattes.cnpq.br/3704997196792935', '../img/busca.png', 'Sistemas Operacionais');
+
+INSERT INTO Usuarios (nome, email, ultimo_acesso, data_cadastro, data_exclusao)
+VALUES ('Ronan Adriel Zenatti', 'ronan.zenatti@fatec.sp.gov.br', NOW(), NOW(), NULL);
+
+SET @ultimo_id_usuario = LAST_INSERT_ID();
+
+INSERT INTO Professores (id_professor, linkedin, lattes, foto_url, disciplina)
+VALUES (@ultimo_id_usuario, 'https://www.linkedin.com/in/ronanzenatti/', 'http://lattes.cnpq.br/9197032267433879', '../img/ronan.png', 'Desenvolvimento Web, Banco de Dados Relacional');
+
+INSERT INTO Usuarios (nome, email, ultimo_acesso, data_cadastro, data_exclusao)
+VALUES ('Tiago Antonio da Silva', 'tiago.silva238@fatec.sp.gov.br', NOW(), NOW(), NULL);
+
+SET @ultimo_id_usuario = LAST_INSERT_ID();
+
+INSERT INTO Professores (id_professor, linkedin, lattes, foto_url, disciplina)
+VALUES (@ultimo_id_usuario, 'https://www.linkedin.com/in/tiagotas/', 'http://lattes.cnpq.br/0183165737768103', '../img/tiago.png', 'Algoritimos e Lógica de Programação, Estrutura de Dados');
+
+INSERT INTO Usuarios (nome, email, ultimo_acesso, data_cadastro, data_exclusao)
+VALUES ('Vânia Somaio Teixeira', 'vania.teixeira@fatec.sp.gov.br', NOW(), NOW(), NULL);
+
+SET @ultimo_id_usuario = LAST_INSERT_ID();
+
+INSERT INTO Professores (id_professor, linkedin, lattes, foto_url, disciplina)
+VALUES (@ultimo_id_usuario, '', 'http://lattes.cnpq.br/4413496984677686', '../img/vania.png', 'Desenvolvimento Web, Tecnicas de Programação');
 
 
 -- Tabela Disciplinas

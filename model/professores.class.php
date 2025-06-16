@@ -1,6 +1,6 @@
 <?php
 
-class Professor extends Usuario
+class Professor extends Usuarios
 {
     public function __construct(
         string $idUsuario = "",
