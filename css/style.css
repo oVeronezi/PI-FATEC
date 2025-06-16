@@ -93,3 +93,26 @@ section {
 .menu-dis {
   padding: 20px;
 }
+select {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f7f7f7;
+  color: #6e30f2;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+select:hover {
+  background-color: #8350f2;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+option {
+  background-color: #f7f7f7;
+  color: #6e30f2;
+  font-weight: bold;
+  font-size: 16px;
+}

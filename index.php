@@ -28,11 +28,11 @@ if ($uri_limpa === '' || $uri_limpa === '/') {
 
 // Define as rotas
 $routes = [
-   
+
 
     '/' => function () {
 
-        
+
 
         $controller = new HomeController();
         $controller->showHome();
@@ -65,16 +65,19 @@ $routes = [
         require_once "view/desenvolvedores.php";
     },
     '/login' => function () {
-        
+
         require_once "view/login.php";
         $Controller = new usuarioController();
-        $Controller -> login();
+        $Controller->login();
     },
     '/cadastro-aluno' => function () {
         require_once "view/cadastro-aluno.php";
     },
     '/cadastro-professor' => function () {
         require_once "view/cadastro-professor.php";
+    },
+    '/cadastro-pi' => function () {
+        require_once "view/cadastro-pi.php";
     },
     '/mensagem-aluno-cadastrado' => function () {
         // Rota para a view de mensagem de aluno cadastrado
@@ -87,7 +90,11 @@ $routes = [
     '/mensagem-cadastro-enviada' => function () {
         // Rota para a view de mensagem de cadastro genérica (se for diferente de mensagem-enviada.php)
         require_once "view/mensagem-cadastro-enviada.php";
+    },
+    '/mensagem-pi-cadastrado' => function () {
+        require_once "view/mensagem-pi-cadastrado.php";
     }
+
 
 ];
 
@@ -98,4 +105,3 @@ if (isset($routes[$uri_limpa])) {
     http_response_code(404);
     echo "404 - Página não encontrada. Verifique o caminho.";
 }
-?>
