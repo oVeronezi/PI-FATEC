@@ -1,7 +1,8 @@
 <?php
-
+    if (session_status() !== PHP_SESSION_ACTIVE) {
+    session_start();
+}
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -36,7 +37,16 @@
                 </div>
                 <!-- Links de navegação (visíveis em telas grandes) -->
                 <div class="hidden md:flex space-x-4">
-                    <a href="/login" class="text-white px-4 py-2 rounded">Logar</a>
+                  <?php 
+if (isset($_SESSION['nome'])) {
+    // Se o usuário está logado
+    echo "<a class='nav-link text-white px-4 py-2 rounded' href=' /logout'>Sair</a>";
+} else {
+    // Se não está logado
+    echo "<a class='nav-link text-white px-4 py-2 rounded' href=' /login'>Entrar</a>";
+}
+?>
+
                     <a href="/home" class="text-white px-4 py-2 rounded">Início</a>
                     <a href="/professores" class="text-white px-4 py-2 rounded">Professores</a>
                     <a href="/projetos" class="text-white px-4 py-2 rounded ">Projetos</a>
