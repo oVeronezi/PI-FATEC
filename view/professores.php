@@ -80,7 +80,7 @@ $lista = $professoresDAO->listarProfessores();
         <div class="list-alunos">
             <ul role="list" class="divide-y divide-gray-300">
                 <?php foreach ($lista as $prof): ?>
-                    <li class="flex justify-between gap-x-6 py-5">
+                    <li class="flex justify-between gap-x-6 py-5 px-4">
                         <div class="flex min-w-0 gap-x-4">
                             <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
                                 src="<?= htmlspecialchars($prof->foto_url) ?>"
