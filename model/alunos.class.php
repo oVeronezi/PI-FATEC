@@ -1,19 +1,36 @@
 <?php
-class Alunos extends Usuarios
+// É importante garantir que o arquivo da classe pai seja incluído.
+// O caminho pode precisar de ajuste dependendo da sua estrutura de pastas.
+require_once 'Usuarios.class.php';
+
+class Aluno extends Usuarios
 {
+    // Propriedades específicas do Aluno
+    private string $linkedin;
+    private string $github;
+    private int $semestre;
+
+    // Propriedades que podem ou não ser usadas agora, mas fazem parte da classe
+    private int $id_alunos;
+    private int $RA;
+
     public function __construct(
-        string $idUsuario = "",
         string $nome = "",
         string $email = "",
-        string $senha = "",
-        private int $id_alunos = 0,
-        private int $RA = 0,
-        private string $github = "",
-        private string $linkedin = "",
-        private int $semestre = 0 // adiciona aqui
+        string $linkedin = "",
+        string $github = "",
+        int $semestre = 0
     ) {
-        parent::__construct($idUsuario, $nome, $email, $senha);
+        // 1. Chama o construtor da classe pai (Usuarios) para definir nome e email
+        parent::__construct(0, $nome, $email, ""); // Passamos IDs e senha vazios por enquanto
+
+        // 2. Define as propriedades específicas desta classe (Aluno)
+        $this->linkedin = $linkedin;
+        $this->github = $github;
+        $this->semestre = $semestre;
     }
+
+    // Getters e Setters continuam os mesmos...
 
     public function getIdAlunos(): int
     {
@@ -60,3 +77,4 @@ class Alunos extends Usuarios
         $this->semestre = $semestre;
     }
 }
+?>

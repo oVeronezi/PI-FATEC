@@ -17,7 +17,7 @@
         <div class="max-w-3xl w-full bg-white p-6 rounded-lg shadow-lg">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Cadastro de Alunos</h2>
 
-            <form action="../controller/AlunosController.php" method="POST">
+            <form action="./controller/alunos.Controller.php" method="POST">
 
                 <!-- Nome Completo -->
                 <div class="mb-4">
@@ -53,9 +53,18 @@
 
                 <!-- Semestre -->
                 <div class="mb-4">
-                    <label for="semestre" class="block text-gray-700 font-medium">Semestre</label>
-                    <input type="text" id="semestre" name="semestre" required placeholder="Informe o seu semestre atual"
-                        class="w-full mt-2 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 ring-purple-600 placeholder:text-gray-500">
+                    <label for="" class="block text-gray-700 font-medium">Semestre</label>
+                    <br>
+                    <select name="semestre" id="semestre">
+                        <option value=""
+                            disabled selected>Semestre do Aluno</option>
+                        <option value="1 semestre">1° semestre</option>
+                        <option value="2 semestre">2° semestre</option>
+                        <option value="3 semestre">3° semestre</option>
+                        <option value="4 semestre">4° semestre</option>
+                        <option value="5 semestre">5° semestre</option>
+                        <option value="6 semestre">6° semestre</option>
+                    </select>
                 </div>
 
                 <div class="mb-4 text-center">
@@ -68,7 +77,7 @@
 
                 <!-- Botão Voltar -->
                 <div class="text-center">
-                    <a href="./contato.php" class="text-black font-bold hover:text-purple-600">Voltar</a>
+                    <a href="./contato" class="text-black font-bold hover:text-purple-600">Voltar</a>
                 </div>
 
             </form>
