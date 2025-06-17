@@ -1,6 +1,5 @@
 <?php
-
-class Alunos extends Usuario
+class Alunos extends Usuarios
 {
     public function __construct(
         string $idUsuario = "",
@@ -10,7 +9,8 @@ class Alunos extends Usuario
         private int $id_alunos = 0,
         private int $RA = 0,
         private string $github = "",
-        private string $linkedin = ""
+        private string $linkedin = "",
+        private int $semestre = 0 // adiciona aqui
     ) {
         parent::__construct($idUsuario, $nome, $email, $senha);
     }
@@ -35,6 +35,11 @@ class Alunos extends Usuario
         return $this->linkedin;
     }
 
+    public function getSemestre(): int
+    {
+        return $this->semestre;
+    }
+
     public function setRA(int $RA): void
     {
         $this->RA = $RA;
@@ -48,5 +53,10 @@ class Alunos extends Usuario
     public function setLinkedin(string $linkedin): void
     {
         $this->linkedin = $linkedin;
+    }
+
+    public function setSemestre(int $semestre): void
+    {
+        $this->semestre = $semestre;
     }
 }
