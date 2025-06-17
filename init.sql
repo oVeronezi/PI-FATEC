@@ -16,22 +16,28 @@ CREATE TABLE IF NOT EXISTS Usuarios (
 INSERT INTO Usuarios (nome, email, senha) VALUES ('admin', 'admin@gmail.com', 'admin123');
 
 -- Tabela Alunos
+DROP TABLE IF EXISTS Alunos;
+
 CREATE TABLE IF NOT EXISTS Alunos (
-    id_aluno BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY, 
+    id_aluno BIGINT NOT NULL PRIMARY KEY,  -- Mesmo valor do id_usuario
     ra VARCHAR(20) UNIQUE NOT NULL, 
     github VARCHAR(255),
     linkedin VARCHAR(255),
-    semestre INT(1) NULL
+    semestre INT(1) NULL,
+    FOREIGN KEY (id_aluno) REFERENCES Usuarios(id_usuario)
 );
+
 
 -- Tabela Professores
 CREATE TABLE IF NOT EXISTS Professores (
-    id_professor BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    id_professor BIGINT NOT NULL PRIMARY KEY,
     linkedin VARCHAR(255),
     foto_url VARCHAR(1024),
     disciplina VARCHAR(255),
-    lattes VARCHAR(2048)
+    lattes VARCHAR(2048),
+    FOREIGN KEY (id_professor) REFERENCES Usuarios(id_usuario)
 );
+
 
 INSERT INTO Usuarios (nome, email, ultimo_acesso, data_cadastro, data_exclusao)
 VALUES ('Alex Paulo Lopes Batista', 'alex.batista@fatec.sp.gov.br', NOW(), NOW(), NULL);
