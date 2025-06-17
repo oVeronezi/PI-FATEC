@@ -1,27 +1,34 @@
 <?php
-// O caminho '../model/' supõe que o controller está em uma pasta como 'controller/'
+// Arquivo: /controller/alunos.Controller.php
+
 require_once '../model/alunosDAO.class.php';
-require_once '../model/alunos.class.php'; // Corrigido: nome da classe no singular
+require_once '../model/alunos.class.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // 1. Coleta os dados do formulário
     $nome = $_POST['nome_completo'] ?? '';
     $email = $_POST['email_institucional'] ?? '';
+    // $senha foi removido
+    $ra = $_POST['ra'] ?? '';
+    $semestre = isset($_POST['semestre']) ? (int)$_POST['semestre'] : 0; // Adicionado de volta
     $linkedin = $_POST['linkedin'] ?? '';
     $github = $_POST['github'] ?? '';
-    // Converte o semestre para inteiro, para garantir o tipo correto
-    $semestre = isset($_POST['semestre']) ? (int)$_POST['semestre'] : 0;
 
-    // 2. Cria uma nova instância da classe Aluno com os dados do formulário
-    // A ordem dos parâmetros agora corresponde ao novo construtor
-    $aluno = new Aluno($nome, $email, $linkedin, $github, $semestre);
+    // Validação básica
+    if (empty($nome) || empty($email) || empty($ra) || $semestre === 0) {
+        die("Erro: Nome, email, RA e semestre são obrigatórios.");
+    }
 
-    // 3. Cria o DAO e chama o método para inserir o aluno no banco
+    // 2. Cria a instância de Aluno (sem senha, com semestre)
+    $aluno = new Aluno($nome, $email, $ra, $semestre, $linkedin, $github);
+
+    // 3. Cria o DAO e chama o método para inserir
     $alunosDAO = new AlunosDAO();
-    $alunosDAO->inserir($aluno);
-
-    // 4. Redireciona para uma página de sucesso
-    header('Location: ../view/mensagem-aluno-cadastrado-enviado.php');
-    exit;
+    if ($alunosDAO->inserir($aluno)) {
+        header('Location: ../view/mensagem-aluno-cadastrado-enviado.php');
+        exit;
+    } else {
+        die("Ocorreu um erro ao cadastrar o aluno. Verifique se o email ou RA já existem.");
+    }
 }
 ?>

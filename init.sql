@@ -20,7 +20,8 @@ CREATE TABLE IF NOT EXISTS Alunos (
     id_aluno BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY, 
     ra VARCHAR(20) UNIQUE NOT NULL, 
     github VARCHAR(255),
-    linkedin VARCHAR(255)
+    linkedin VARCHAR(255),
+    semestre INT(1) NULL
 );
 
 -- Tabela Professores

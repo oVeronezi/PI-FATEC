@@ -1,27 +1,46 @@
 <?php
-// AlunosDAO.class.php
+// Arquivo: /model/AlunosDAO.class.php
 
-// COMO OS ARQUIVOS ESTÃO NA MESMA PASTA (model), O CAMINHO É DIRETO:
 require_once 'conexao.class.php';
-require_once 'alunos.class.php'; // <-- Importante! Use 'Aluno.class.php' aqui.
+require_once 'alunos.class.php';
 
-class AlunosDAO extends Conexao
-{
+class AlunosDAO extends Conexao {
 
-    // O método espera um objeto da classe 'Aluno'
-    public function inserir(Aluno $aluno)
+    public function inserir(Aluno $aluno): bool
     {
-        $sql = "INSERT INTO Alunos (nome, email, linkedin, github, semestre) VALUES (?, ?, ?, ?, ?)";
+        $this->getDb()->beginTransaction();
 
-        $stmt = $this->getDb()->prepare($sql);
+        try {
+            // 1. INSERIR NA TABELA Usuarios (sem senha)
+            // A coluna 'senha' receberá o valor padrão do banco de dados (NULL)
+            $sql_usuario = "INSERT INTO Usuarios (nome, email) VALUES (?, ?)";
+            $stmt_usuario = $this->getDb()->prepare($sql_usuario);
+            $stmt_usuario->execute([
+                $aluno->getNome(),
+                $aluno->getEmail()
+            ]);
 
-        $stmt->execute([
-            $aluno->getNome(),
-            $aluno->getEmail(),
-            $aluno->getLinkedin(),
-            $aluno->getGithub(),
-            $aluno->getSemestre()
-        ]);
+            // 2. PEGAR O ID DO USUÁRIO
+            $idUsuario = $this->getDb()->lastInsertId();
+
+            // 3. INSERIR NA TABELA Alunos (com semestre)
+            $sql_aluno = "INSERT INTO Alunos (id_aluno, ra, github, linkedin, semestre) VALUES (?, ?, ?, ?, ?)";
+            $stmt_aluno = $this->getDb()->prepare($sql_aluno);
+            $stmt_aluno->execute([
+                $idUsuario,
+                $aluno->getRa(),
+                $aluno->getGithub(),
+                $aluno->getLinkedin(),
+                $aluno->getSemestre() // Adicionado
+            ]);
+
+            $this->getDb()->commit();
+            return true;
+
+        } catch (PDOException $e) {
+            $this->getDb()->rollBack();
+            error_log("Erro ao inserir aluno: " . $e->getMessage());
+            return false;
+        }
     }
 }
-?>

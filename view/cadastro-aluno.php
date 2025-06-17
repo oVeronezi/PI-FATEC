@@ -12,14 +12,11 @@
 
 
 <body class="bg-gray-50">
-
     <div class="flex justify-center items-center min-h-screen bg-gray-100 py-8">
         <div class="max-w-3xl w-full bg-white p-6 rounded-lg shadow-lg">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Cadastro de Alunos</h2>
 
-            <form action="./controller/alunos.Controller.php" method="POST">
-
-                <!-- Nome Completo -->
+            <form action="../controller/alunos.Controller.php" method="POST">
                 <div class="mb-4">
                     <label for="nome_completo" class="block text-gray-700 font-medium">Nome Completo</label>
                     <input type="text" id="nome_completo" name="nome_completo" required
@@ -27,66 +24,55 @@
                         class="w-full mt-2 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 ring-purple-600 placeholder:text-gray-500">
                 </div>
 
-                <!-- E-mail Institucional -->
                 <div class="mb-4">
-                    <label for="email_institucional" class="block text-gray-700 font-medium">E-mail
-                        Institucional</label>
+                    <label for="email_institucional" class="block text-gray-700 font-medium">E-mail Institucional</label>
                     <input type="email" id="email_institucional" name="email_institucional" required
                         placeholder="Digite seu e-mail institucional"
                         class="w-full mt-2 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 ring-purple-600 placeholder:text-gray-500">
                 </div>
 
-                <!-- LinkedIn -->
                 <div class="mb-4">
-                    <label for="linkedin" class="block text-gray-700 font-medium">LinkedIn</label>
-                    <input type="url" id="linkedin" name="linkedin" required
-                        placeholder="Informe o link do seu linkedin"
+                    <label for="ra" class="block text-gray-700 font-medium">RA (Registro do Aluno)</label>
+                    <input type="text" id="ra" name="ra" required
+                        placeholder="Digite seu RA"
                         class="w-full mt-2 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 ring-purple-600 placeholder:text-gray-500">
                 </div>
 
-                <!-- GitHub -->
                 <div class="mb-4">
-                    <label for="github" class="block text-gray-700 font-medium">GitHub</label>
-                    <input type="url" id="github" name="github" required placeholder="Informe o link do seu GitHub"
-                        class="w-full mt-2 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 ring-purple-600 placeholder:text-gray-500">
-                </div>
-
-                <!-- Semestre -->
-                <div class="mb-4">
-                    <label for="" class="block text-gray-700 font-medium">Semestre</label>
-                    <br>
-                    <select name="semestre" id="semestre">
-                        <option value=""
-                            disabled selected>Semestre do Aluno</option>
-                        <option value="1 semestre">1° semestre</option>
-                        <option value="2 semestre">2° semestre</option>
-                        <option value="3 semestre">3° semestre</option>
-                        <option value="4 semestre">4° semestre</option>
-                        <option value="5 semestre">5° semestre</option>
-                        <option value="6 semestre">6° semestre</option>
+                    <label for="semestre" class="block text-gray-700 font-medium">Semestre</label>
+                    <select name="semestre" id="semestre" required class="w-full mt-2 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 ring-purple-600">
+                        <option value="" disabled selected>Selecione o semestre</option>
+                        <option value="1">1° semestre</option>
+                        <option value="2">2° semestre</option>
+                        <option value="3">3° semestre</option>
+                        <option value="4">4° semestre</option>
+                        <option value="5">5° semestre</option>
+                        <option value="6">6° semestre</option>
                     </select>
                 </div>
 
-                <div class="mb-4 text-center">
-                    <button type="submit"
-                        class="w-full bg-purple-600 text-white p-3 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600">
-                        Cadastrar
-                    </button>
+                <div class="mb-4">
+                    <label for="linkedin" class="block text-gray-700 font-medium">LinkedIn</label>
+                    <input type="url" id="linkedin" name="linkedin"
+                        placeholder="https://linkedin.com/in/seu-usuario"
+                        class="w-full mt-2 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 ring-purple-600 placeholder:text-gray-500">
                 </div>
 
+                <div class="mb-4">
+                    <label for="github" class="block text-gray-700 font-medium">GitHub</label>
+                    <input type="url" id="github" name="github"
+                        placeholder="https://github.com/seu-usuario"
+                        class="w-full mt-2 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 ring-purple-600 placeholder:text-gray-500">
+                </div>
 
-                <!-- Botão Voltar -->
-                <div class="text-center">
-                    <a href="./contato" class="text-black font-bold hover:text-purple-600">Voltar</a>
+                <div class="mb-4 text-center">
+                    <button type="submit" class="w-full bg-purple-600 text-white p-3 rounded-md hover:bg-purple-700">Cadastrar</button>
                 </div>
 
             </form>
-
         </div>
     </div>
-
 </body>
-
 
 
 </html>
