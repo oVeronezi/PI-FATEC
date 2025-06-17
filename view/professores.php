@@ -1,3 +1,10 @@
+<?php
+require_once './model/professoresDAO.class.php';
+
+$professoresDAO = new ProfessoresDAO();
+$lista = $professoresDAO->listarProfessores();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -72,181 +79,30 @@
     <div class="background">
         <div class="list-alunos">
             <ul role="list" class="divide-y divide-gray-300">
-
-                <!-- Prof Alex Paulo -->
-                <li class="flex justify-between gap-x-6 py-1">
-                    <div class="flex min-w-0 gap-x-4">
-                        <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
-                            src="../img/foto alex.png"
-                            alt="Foto Alekão" class="w-8 h-8 rounded-full">
-                        <div class="min-w-0 flex-auto">
-                            <p class="text-sm/6 font-semibold">Alex Paulo Lopes Batista</p>
-                            <p class="mt-1 truncate text-xs/5">alex.batista@fatec.sp.gov.br</p>
+                <?php foreach ($lista as $prof): ?>
+                    <li class="flex justify-between gap-x-6 py-5">
+                        <div class="flex min-w-0 gap-x-4">
+                            <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
+                                src="<?= htmlspecialchars($prof->foto_url) ?>"
+                                alt="Foto de <?= htmlspecialchars($prof->nome) ?>">
+                            <div class="min-w-0 flex-auto">
+                                <p class="text-sm/6 font-semibold"><?= htmlspecialchars($prof->nome) ?></p>
+                                <p class="mt-1 truncate text-xs/5"><?= htmlspecialchars($prof->email) ?></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                        <p class="text-sm/6"><b>Desenvolvimento Web</b></p>
-                        <div class="flex gap-2">
-                            <a href="https://www.linkedin.com/in/alex-paulo-lopes-batista-a2936524/" target="_blank"
-                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Linkedin
-                                <a href="http://lattes.cnpq.br/7239785869687027" target="_blank"
+                        <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                            <p class="text-sm/6"><b><?= htmlspecialchars($prof->disciplina) ?></b></p>
+                            <div class="flex gap-2">
+                                <?php if (!empty($prof->linkedin)): ?>
+                                    <a href="<?= htmlspecialchars($prof->linkedin) ?>" target="_blank"
+                                        class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn</a>
+                                <?php endif; ?>
+                                <a href="<?= htmlspecialchars($prof->lattes) ?>" target="_blank"
                                     class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-
-                <!-- prof Anderson Ferreira -->
-                <li class="flex justify-between gap-x-6 py-1">
-                    <div class="flex min-w-0 gap-x-4">
-                        <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
-                            src="./img/anderson.png"
-                            alt="Foto do Anderson">
-                        <div class="min-w-0 flex-auto">
-                            <p class="text-sm/6 font-semibold">Anderson Ferreira</p>
-                            <p class="mt-1 truncate text-xs/5">andersonf.fernandes@fatec.sp.gov.br</p>
-                        </div>
-                    </div>
-                    <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                        <p class="text-sm/6"><b>Design Digital</b></p>
-                        <div class="flex gap-2">
-                            <a href="https://www.linkedin.com/in/anderson-ferreira-fernandes-89456937/" target="_blank"
-                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Linkedin
-                                <a href="http://lattes.cnpq.br/1627329996472089" target="_blank"
-                                    class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
-                        </div>
-                    </div>
-                </li>
-
-                <!-- prof Cida -->
-                <li class="flex justify-between gap-x-6 py-5">
-                    <div class="flex min-w-0 gap-x-4">
-                        <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
-                            src="./img/cida.png"
-                            alt="Foto da Cida">
-                        <div class="min-w-0 flex-auto">
-                            <p class="text-sm/6 font-semibold">Aparecida Maria Zem Lopes</p>
-                            <p class="mt-1 truncate text-xs/5">aparecida.lopes01@fatec.sp.gov.br</p>
-                        </div>
-                    </div>
-                    <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                        <p class="text-sm/6"><b>Engenharia de Software</b></p>
-                        <div class="flex gap-2">
-                            <a href="https://www.linkedin.com/in/cida-zem-52936a34/" target="_blank"
-                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
-                                <a href="http://lattes.cnpq.br/6123540746643830" target="_blank"
-                                    class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
-                        </div>
-                    </div>
-                </li>
-
-                <!-- prof Hélio -->
-                <li class="flex justify-between gap-x-6 py-5">
-                    <div class="flex min-w-0 gap-x-4">
-                        <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
-                            src="./img/helio.png"
-                            alt="">
-                        <div class="min-w-0 flex-auto">
-                            <p class="text-sm/6 font-semibold">Hélio Luis da Silva Rodrigues</p>
-                            <p class="mt-1 truncate text-xs/5">helio.rodrigues@fatec.sp.gov.br</p>
-                        </div>
-                    </div>
-                    <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                        <p class="text-sm/6"><b>Banco De Dados</b></p>
-                        <div class="flex gap-2">
-                            <a href="https://www.linkedin.com/in/cognus/" target="_blank"
-                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
-                                <a href="http://lattes.cnpq.br/9183639307001530" target="_blank"
-                                    class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
-                        </div>
-                    </div>
-                </li>
-
-                <!-- prof Buscariollo -->
-                <li class="flex justify-between gap-x-6 py-5">
-                    <div class="flex min-w-0 gap-x-4">
-                        <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
-                            src="./img/busca.png"
-                            alt="foto Busca">
-                        <div class="min-w-0 flex-auto">
-                            <p class="text-sm/6 font-semibold">Paulo Henrique Buscariollo</p>
-                            <p class="mt-1 truncate text-xs/5">phb.jau@fatec.sp.gov.br</p>
-                        </div>
-                    </div>
-                    <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                        <p class="text-sm/6"><b>Sistemas Operacionais</b></p>
-                        <div class="flex gap-2">
-                            <a href="https://www.linkedin.com/in/paulo-buscariollo-b6898921/" target="_blank"
-                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
-                                <a href="http://lattes.cnpq.br/3704997196792935" target="_blank"
-                                    class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
-                        </div>
-                    </div>
-                </li>
-
-                <!-- prof Ronan -->
-                <li class="flex justify-between gap-x-6 py-5">
-                    <div class="flex min-w-0 gap-x-4">
-                        <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
-                            src="../img/ronan.png"
-                            alt="foto Ronan">
-                        <div class="min-w-0 flex-auto">
-                            <p class="text-sm/6 font-semibold">Ronan Adriel Zenatti</p>
-                            <p class="mt-1 truncate text-xs/5">ronan.zenatti@fatec.sp.gov.br</p>
-                        </div>
-                    </div>
-                    <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                        <p class="text-sm/6"><b>Desenvolvimento Web, Banco de Dados Relacional</b></p>
-                        <div class="flex gap-2">
-                            <a href="https://www.linkedin.com/in/ronanzenatti/" target="_blank"
-                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
-                                <a href="http://lattes.cnpq.br/9197032267433879" target="_blank"
-                                    class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
-                        </div>
-                    </div>
-                </li>
-
-                <!-- prof Tiago -->
-                <li class="flex justify-between gap-x-6 py-5">
-                    <div class="flex min-w-0 gap-x-4">
-                        <img class="h-12 w-15 flex-none rounded-full bg-gray-50"
-                            src="../img/tiago.png"
-                            alt="foto Tiago">
-                        <div class="min-w-0 flex-auto">
-                            <p class="text-sm/6 font-semibold">Tiago Antonio da Silva</p>
-                            <p class="mt-1 truncate text-xs/5">tiago.silva238@fatec.sp.gov.br</p>
-                        </div>
-                    </div>
-                    <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                        <p class="text-sm/6"><b>Algoritimos e Lógica de Programação, Estrutura de Dados</b></p>
-                        <div class="flex gap-2">
-                            <a href="https://www.linkedin.com/in/tiagotas/" target="_blank"
-                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
-                                <a href="http://lattes.cnpq.br/0183165737768103" target="_blank"
-                                    class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
-                        </div>
-                    </div>
-                </li>
-
-                <!-- prof Vânia -->
-                <li class="flex justify-between gap-x-6 py-5">
-                    <div class="flex min-w-0 gap-x-4">
-                        <img src="https://p7.hiclipart.com/preview/442/477/305/computer-icons-user-profile-avatar-profile.jpg"
-                            alt="Avatar Integrante" class="w-8 h-8 rounded-full">
-                        <div class="min-w-0 flex-auto">
-                            <p class="text-sm/6 font-semibold">Vânia Somaio Teixeira</p>
-                            <p class="mt-1 truncate text-xs/5">vania.teixeira@fatec.sp.gov.br</p>
-                        </div>
-                    </div>
-                    <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                        <p class="text-sm/6"><b>Desenvolvimento Web, Tecnicas de Programação</b></p>
-                        <div class="flex gap-2">
-                            <a href="" target="_blank"
-                                class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">LinkedIn
-                                <a href="http://lattes.cnpq.br/4413496984677686" target="_blank"
-                                    class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
-                        </div>
-                    </div>
-                </li>
+                    </li>
+                <?php endforeach; ?>
             </ul>
         </div>
     </div>
