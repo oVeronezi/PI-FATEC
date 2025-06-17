@@ -7,7 +7,7 @@ abstract class Conexao {
 
         try {
             $this->db = new PDO($parametros, "root", "1234");
-            // echo "Conexão estabelecida com sucesso!<br>"; // Pode remover isso em produção
+             echo "Conexão estabelecida com sucesso!<br>"; // Pode remover isso em produção
         } catch (PDOException $e) {
             die("Erro ao conectar com o banco de dados: " . $e->getMessage() . $e->getCode());
         }
