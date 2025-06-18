@@ -24,4 +24,3 @@ class ProfessoresDAO extends Conexao
         }
     }
 }
-?>

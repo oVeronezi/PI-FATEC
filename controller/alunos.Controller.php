@@ -1,5 +1,4 @@
 <?php
-// Arquivo: /controller/alunos.Controller.php
 
 require_once '../model/alunosDAO.class.php';
 require_once '../model/alunos.class.php';

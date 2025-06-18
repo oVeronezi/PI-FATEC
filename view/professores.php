@@ -1,8 +1,8 @@
 <?php
-require_once './model/professoresDAO.class.php';
+require_once './controller/professores.Controller.php';
 
-$professoresDAO = new ProfessoresDAO();
-$lista = $professoresDAO->listarProfessores();
+$controller = new ProfessoresController();
+$lista = $controller->listarProfessores();
 ?>
 
 <!DOCTYPE html>
