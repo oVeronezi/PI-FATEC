@@ -1,46 +1,23 @@
 <?php
-// Arquivo: /model/AlunosDAO.class.php
-
-require_once 'conexao.class.php';
-require_once 'alunos.class.php';
+//require_once 'conexao.class.php';
 
 class AlunosDAO extends Conexao {
+    public function __construct() {
+        parent::__construct();
+    }
 
-    public function inserir(Aluno $aluno): bool
-    {
-        $this->getDb()->beginTransaction();
+    public function listarAlunos() {
+        $sql = "SELECT a.id_aluno, u.nome, a.ra 
+                FROM Alunos a
+                INNER JOIN Usuarios u ON a.id_aluno = u.id_usuario
+                ORDER BY u.nome ASC";
 
         try {
-            // 1. INSERIR NA TABELA Usuarios (sem senha)
-            // A coluna 'senha' receberá o valor padrão do banco de dados (NULL)
-            $sql_usuario = "INSERT INTO Usuarios (nome, email) VALUES (?, ?)";
-            $stmt_usuario = $this->getDb()->prepare($sql_usuario);
-            $stmt_usuario->execute([
-                $aluno->getNome(),
-                $aluno->getEmail()
-            ]);
-
-            // 2. PEGAR O ID DO USUÁRIO
-            $idUsuario = $this->getDb()->lastInsertId();
-
-            // 3. INSERIR NA TABELA Alunos (com semestre)
-            $sql_aluno = "INSERT INTO Alunos (id_aluno, ra, github, linkedin, semestre) VALUES (?, ?, ?, ?, ?)";
-            $stmt_aluno = $this->getDb()->prepare($sql_aluno);
-            $stmt_aluno->execute([
-                $idUsuario,
-                $aluno->getRa(),
-                $aluno->getGithub(),
-                $aluno->getLinkedin(),
-                $aluno->getSemestre() // Adicionado
-            ]);
-
-            $this->getDb()->commit();
-            return true;
-
+            $stm = $this->db->prepare($sql);
+            $stm->execute();
+            return $stm->fetchAll(PDO::FETCH_OBJ);
         } catch (PDOException $e) {
-            $this->getDb()->rollBack();
-            error_log("Erro ao inserir aluno: " . $e->getMessage());
-            return false;
+            return [];
         }
     }
 }

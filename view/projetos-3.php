@@ -1,3 +1,11 @@
+<?php
+require_once './controller/projetosIntegradores.Controller.php';
+
+$semestre = 3; // Aqui você escolhe o semestre
+$controller = new ProjetosIntegradoresController();
+$projetos = $controller->listarPorSemestre($semestre);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -40,23 +48,17 @@
         </div>
     </nav>
 
+    <!-- Menu Dropdown (oculto em telas grandes, aparece em telas pequenas) -->
     <div id="menu" class="md:hidden bg-purple-800 px-6 py-2 hidden">
-        <a href="./home" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Início</a>
-        <a href="./professores" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Professores</a>
-        <a href="./projetos" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Projetos</a>
-        <a href="./contato" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Contato</a>
-        <a href="./desenvolvedores"
+        <a href="/home" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Início</a>
+        <a href="/professores" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Professores</a>
+        <a href="/projetos" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Projetos</a>
+        <a href="/contato" class="text-white block px-4 py-2 rounded hover:bg-purple-300">Contato</a>
+        <a href="/desenvolvedores"
             class="text-white block px-4 py-2 rounded hover:bg-purple-300">Desenvolvedores</a>
     </div>
 
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const menu = document.getElementById('menu');
 
-        hamburger.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-    </script>
 
     <header-proj class="text-white py-10">
         <div class="container mx-auto text-center">
@@ -69,148 +71,71 @@
         <div class="max-w-6xl mx-auto px-4 py-2 ">
             <ul class="flex space-x-4 justify-center">
                 <li>
-                    <a href="./projetos" class="font-bold text-black px-4 py-2 rounded hover:text-purple-800">1°
+                    <a href="/projetos" class="font-bold text-black px-4 py-2 rounded hover:text-purple-800">1°
                         Semestre</a>
                 </li>
                 <li>
-                    <a href="./projetos-2" class="font-bold text-black px-4 py-2 rounded hover:text-purple-800">2°
+                    <a href="/projetos-2" class="font-bold text-black px-4 py-2 rounded hover:text-purple-800">2°
                         Semestre</a>
                 </li>
                 <li>
-                    <a href="./projetos-3" class="font-bold text-black px-4 py-2 rounded hover:text-purple-800">3°
+                    <a href="/projetos-3" class="font-bold text-black px-4 py-2 rounded hover:text-purple-800">3°
                         Semestre</a>
                 </li>
             </ul>
         </div>
     </sub-nav>
 
-    <div class="flex flex-wrap justify-center">
-        <!-- Card 1 -->
-        <div class="w-full sm:w-1/2 lg:w-1/3 p-2">
-            <div
-                class="h-full flex flex-col max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white hover:text-purple-800">
-                <div class="flex justify-center p-4">
-                    <img class="w-full h-48 object-cover rounded-lg" src="https://via.placeholder.com/300"
-                        alt="Imagem do Projeto">
-                </div>
-                <div class="px-6 py-4 flex-grow">
-                    <div class="font-bold text-xl mb-2">Projeto </div>
-                    <p class="text-gray-700 text-base">
-                        descrição projeto
-                    </p>
-                    <p class="text-gray-700 text-base font-semibold mt-4">Integrantes:</p>
-                    <div class="space-y-3 mt-2">
-                        <div class="flex items-center space-x-3">
-                            <img src="https://p7.hiclipart.com/preview/442/477/305/computer-icons-user-profile-avatar-profile.jpg"
-                                alt="Avatar Integrante" class="w-8 h-8 rounded-full">
-                            <a href="#" class="text-black hover:text-purple-800 font-medium">Integrante 1</a>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <img src="https://p7.hiclipart.com/preview/442/477/305/computer-icons-user-profile-avatar-profile.jpg"
-                                alt="Avatar Integrante" class="w-8 h-8 rounded-full">
-                            <a href="#" class="text-black hover:text-purple-800 font-medium">Integrante 2</a>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <img src="https://p7.hiclipart.com/preview/442/477/305/computer-icons-user-profile-avatar-profile.jpg"
-                                alt="Avatar Integrante" class="w-8 h-8 rounded-full">
-                            <a href="#" class="text-black hover:text-purple-800 font-medium">Integrante 3</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="px-6 pt-4 pb-4">
-                    <a href="#" class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded">
-                        Conhecer o Projeto
-                    </a>
-                </div>
-            </div>
-        </div>
+    <div class="flex flex-wrap justify-center p-4">
+        <?php if (count($projetos) > 0): ?>
+            <?php foreach ($projetos as $projeto): ?>
+                <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
+                    <div class="h-full flex flex-col rounded-lg overflow-hidden shadow-lg bg-white hover:text-purple-800">
+                        <div class="px-6 py-4 flex-grow">
+                            <div class="font-bold text-lg"><?= htmlspecialchars($projeto->nome) ?></div>
+                            <p class="text-gray-700 text-sm mt-2">Semestre: <?= htmlspecialchars($projeto->semestre) ?>º</p>
 
-        <div class="w-full sm:w-1/2 lg:w-1/3 p-2">
-            <div
-                class="h-full flex flex-col max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white hover:text-purple-800">
-                <div class="flex justify-center p-4">
-                    <img class="w-full h-48 object-cover rounded-lg" src="https://via.placeholder.com/300"
-                        alt="Imagem do Projeto">
-                </div>
-                <div class="px-6 py-4 flex-grow">
-                    <div class="font-bold text-xl mb-2">Projeto </div>
-                    <p class="text-gray-700 text-base">
-                        descrição projeto
-                    </p>
-                    <p class="text-gray-700 text-base font-semibold mt-4">Integrantes:</p>
-                    <div class="space-y-3 mt-2">
-                        <div class="flex items-center space-x-3">
-                            <img src="https://p7.hiclipart.com/preview/442/477/305/computer-icons-user-profile-avatar-profile.jpg"
-                                alt="Avatar Integrante" class="w-8 h-8 rounded-full">
-                            <a href="#" class="text-black hover:text-purple-800 font-medium">Integrante 1</a>
+                            <p class="text-gray-700 text-sm font-semibold mt-4">Integrantes:</p>
+                            <?php
+                            $alunos = $controller->listarAlunosDoProjeto($projeto->id_pi);
+                            foreach ($alunos as $aluno): ?>
+                                <div class="flex items-center space-x-2 mt-1">
+                                    <a href="<?= htmlspecialchars($aluno->github) ?>" target="_blank"
+                                        class="text-black hover:text-purple-800 font-medium text-sm"><?= htmlspecialchars($aluno->nome) ?></a>
+                                </div>
+                            <?php endforeach; ?>
                         </div>
-                        <div class="flex items-center space-x-3">
-                            <img src="https://p7.hiclipart.com/preview/442/477/305/computer-icons-user-profile-avatar-profile.jpg"
-                                alt="Avatar Integrante" class="w-8 h-8 rounded-full">
-                            <a href="#" class="text-black hover:text-purple-800 font-medium">Integrante 2</a>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <img src="https://p7.hiclipart.com/preview/442/477/305/computer-icons-user-profile-avatar-profile.jpg"
-                                alt="Avatar Integrante" class="w-8 h-8 rounded-full">
-                            <a href="#" class="text-black hover:text-purple-800 font-medium">Integrante 3</a>
+                        <div class="px-6 pt-2 pb-4">
+                            <a href="<?= htmlspecialchars($projeto->link_github) ?>" target="_blank"
+                                class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded text-sm">
+                                Conhecer o Projeto
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="px-6 pt-4 pb-4">
-                    <a href="#" class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded">
-                        Conhecer o Projeto
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="w-full sm:w-1/2 lg:w-1/3 p-2">
-            <div
-                class="h-full flex flex-col max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white hover:text-purple-800">
-                <div class="flex justify-center p-4">
-                    <img class="w-full h-48 object-cover rounded-lg" src="https://via.placeholder.com/300"
-                        alt="Imagem do Projeto">
-                </div>
-                <div class="px-6 py-4 flex-grow">
-                    <div class="font-bold text-xl mb-2">Projeto </div>
-                    <p class="text-gray-700 text-base">
-                        descrição projeto
-                    </p>
-                    <p class="text-gray-700 text-base font-semibold mt-4">Integrantes:</p>
-                    <div class="space-y-3 mt-2">
-                        <div class="flex items-center space-x-3">
-                            <img src="https://p7.hiclipart.com/preview/442/477/305/computer-icons-user-profile-avatar-profile.jpg"
-                                alt="Avatar Integrante" class="w-8 h-8 rounded-full">
-                            <a href="#" class="text-black hover:text-purple-800 font-medium">Integrante 1</a>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <img src="https://p7.hiclipart.com/preview/442/477/305/computer-icons-user-profile-avatar-profile.jpg"
-                                alt="Avatar Integrante" class="w-8 h-8 rounded-full">
-                            <a href="#" class="text-black hover:text-purple-800 font-medium">Integrante 2</a>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <img src="https://p7.hiclipart.com/preview/442/477/305/computer-icons-user-profile-avatar-profile.jpg"
-                                alt="Avatar Integrante" class="w-8 h-8 rounded-full">
-                            <a href="#" class="text-black hover:text-purple-800 font-medium">Integrante 3</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="px-6 pt-4 pb-4">
-                    <a href="#" class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded">
-                        Conhecer o Projeto
-                    </a>
-                </div>
-            </div>
-        </div>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <p class="text-center text-gray-600 text-lg">Nenhum projeto encontrado para este semestre.</p>
+        <?php endif; ?>
     </div>
+
 
 
     <footer class="text-white py-4 mt-28 ">
         <div class="container mx-auto text-center">
-            <p>&copy; 2025 Fatec Jaú</p>
+            <p>&copy; 2024 Fatec Jaú</p>
         </div>
     </footer>
+
+    <!-- Script para alternar o menu -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 

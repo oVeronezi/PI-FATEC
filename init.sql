@@ -116,7 +116,11 @@ CREATE TABLE IF NOT EXISTS Disciplinas (
 -- Tabela ProjetosIntegradores
 CREATE TABLE IF NOT EXISTS ProjetosIntegradores (
     id_pi BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    nome VARCHAR(255) UNIQUE NOT NULL -- Nome do projeto, obrigatório.
+    nome VARCHAR(255) UNIQUE NOT NULL, -- Nome do projeto, obrigatório.
+    imagem VARCHAR(255),
+    descricao VARCHAR(255),
+    link_github VARCHAR(255),
+    semestre INT(1)
 );
 
 -- Tabela Categorias
