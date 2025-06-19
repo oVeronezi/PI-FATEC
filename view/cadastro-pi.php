@@ -19,12 +19,21 @@ $alunos = $alunosDAO->listarAlunos();
         <div class="max-w-3xl w-full bg-white p-6 rounded-lg shadow-lg">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Cadastro de Projetos Integradores</h2>
 
-            <form action="../controller/cadastroPI.controller.php" method="POST">
+            <!-- ⚠️ enctype CORRIGIDO para envio de arquivo -->
+            <form action="../controller/cadastroPI.controller.php" method="POST" enctype="multipart/form-data">
+
                 <!-- Nome Do Projeto -->
                 <div class="mb-4">
                     <label for="nome_projeto" class="block text-gray-700 font-medium">Nome Do Projeto</label>
                     <input type="text" id="nome_projeto" name="nome_projeto" required
                         class="w-full mt-2 p-3 border border-gray-300 rounded-md focus:ring-2 ring-purple-600">
+                </div>
+
+                <!-- Descrição Do Projeto -->
+                <div class="mb-4">
+                    <label for="descricao_projeto" class="block text-gray-700 font-medium">Descrição</label>
+                    <textarea id="descricao_projeto" name="descricao_projeto" required rows="4"
+                        class="w-full mt-2 p-3 border border-gray-300 rounded-md focus:ring-2 ring-purple-600"></textarea>
                 </div>
 
                 <!-- Link no Github -->
@@ -58,6 +67,13 @@ $alunos = $alunosDAO->listarAlunos();
                         <option value="5">5º Semestre</option>
                         <option value="6">6º Semestre</option>
                     </select>
+                </div>
+
+                <!-- Upload da Imagem -->
+                <div class="mb-4">
+                    <label for="foto" class="block text-gray-700 font-medium">Foto do Projeto</label>
+                    <input type="file" id="foto" name="foto" accept="image/*" required
+                        class="w-full mt-2 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 ring-purple-600">
                 </div>
 
                 <div class="mb-4 text-center">

@@ -1,4 +1,4 @@
-<?php
+<?php 
 require_once 'conexao.class.php';
 
 class ProjetosIntegradoresDAO extends Conexao {
@@ -6,21 +6,23 @@ class ProjetosIntegradoresDAO extends Conexao {
         parent::__construct();
     }
 
-    public function inserirProjeto($nome, $link, $semestre, $alunos = []) {
+    public function inserirProjeto($nome, $descricao, $link, $semestre, $fotoUrl, $alunos = []) {
         try {
             $this->db->beginTransaction();
 
-            // Inserir projeto
-            $sql = "INSERT INTO ProjetosIntegradores (nome, link_github, semestre) VALUES (:nome, :link, :semestre)";
+            // ⚠ Nome do campo correto: foto_url
+            $sql = "INSERT INTO ProjetosIntegradores (nome, descricao, link_github, semestre, foto_url) 
+                    VALUES (:nome, :descricao, :link, :semestre, :foto)";
             $stmt = $this->db->prepare($sql);
             $stmt->execute([
                 ':nome' => $nome,
+                ':descricao' => $descricao,
                 ':link' => $link,
-                ':semestre' => $semestre
+                ':semestre' => $semestre,
+                ':foto' => $fotoUrl
             ]);
             $idProjeto = $this->db->lastInsertId();
 
-            // Relacionar projeto e alunos
             $stmtAlunoProjeto = $this->db->prepare("INSERT INTO Aluno_Projeto (id_aluno, id_projeto) VALUES (:id_aluno, :id_projeto)");
             foreach ($alunos as $idAluno) {
                 $stmtAlunoProjeto->execute([
@@ -34,12 +36,10 @@ class ProjetosIntegradoresDAO extends Conexao {
 
         } catch (PDOException $e) {
             $this->db->rollBack();
-            error_log("Erro PI: " . $e->getMessage());
-            return false;
+            die("Erro PDO: " . $e->getMessage());
         }
     }
 
-    // Listar projetos por semestre
     public function listarPorSemestre($semestre) {
         $sql = "SELECT * FROM ProjetosIntegradores WHERE semestre = :semestre";
         $stmt = $this->db->prepare($sql);
@@ -47,7 +47,6 @@ class ProjetosIntegradoresDAO extends Conexao {
         return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
-    // Listar alunos de um projeto
     public function listarAlunosDoProjeto($idProjeto) {
         $sql = "SELECT u.nome, a.github 
                 FROM Aluno_Projeto ap

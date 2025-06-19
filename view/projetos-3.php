@@ -91,9 +91,16 @@ $projetos = $controller->listarPorSemestre($semestre);
             <?php foreach ($projetos as $projeto): ?>
                 <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
                     <div class="h-full flex flex-col rounded-lg overflow-hidden shadow-lg bg-white hover:text-purple-800">
+
+                        <!-- Imagem -->
+                        <img src="<?= htmlspecialchars($projeto->foto_url) ?>" alt="Imagem do Projeto"
+                            class="h-48 w-full object-cover">
+
+                        <!-- Conteúdo -->
                         <div class="px-6 py-4 flex-grow">
                             <div class="font-bold text-lg"><?= htmlspecialchars($projeto->nome) ?></div>
-                            <p class="text-gray-700 text-sm mt-2">Semestre: <?= htmlspecialchars($projeto->semestre) ?>º</p>
+                            <p class="text-gray-700 text-sm mt-2"><?= htmlspecialchars($projeto->descricao) ?></p>
+                            <p class="text-gray-500 text-xs mt-1">Semestre: <?= htmlspecialchars($projeto->semestre) ?>º</p>
 
                             <p class="text-gray-700 text-sm font-semibold mt-4">Integrantes:</p>
                             <?php
@@ -101,10 +108,14 @@ $projetos = $controller->listarPorSemestre($semestre);
                             foreach ($alunos as $aluno): ?>
                                 <div class="flex items-center space-x-2 mt-1">
                                     <a href="<?= htmlspecialchars($aluno->github) ?>" target="_blank"
-                                        class="text-black hover:text-purple-800 font-medium text-sm"><?= htmlspecialchars($aluno->nome) ?></a>
+                                        class="text-black hover:text-purple-800 font-medium text-sm">
+                                        <?= htmlspecialchars($aluno->nome) ?>
+                                    </a>
                                 </div>
                             <?php endforeach; ?>
                         </div>
+
+                        <!-- Botão -->
                         <div class="px-6 pt-2 pb-4">
                             <a href="<?= htmlspecialchars($projeto->link_github) ?>" target="_blank"
                                 class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded text-sm">
