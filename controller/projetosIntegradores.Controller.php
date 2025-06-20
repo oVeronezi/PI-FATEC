@@ -1,5 +1,5 @@
 <?php
-require_once './model/projetosIntegradoresDAO.class.php';
+require_once './model/piDAO.class.php';
 
 class ProjetosIntegradoresController
 {
@@ -7,7 +7,7 @@ class ProjetosIntegradoresController
 
     public function __construct()
     {
-        $this->dao = new ProjetosIntegradoresDAO();
+        $this->dao = new PiDAO();
     }
 
     public function listarPorSemestre($semestre)
