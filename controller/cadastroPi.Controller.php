@@ -2,7 +2,7 @@
 // Arquivo: /controller/cadastroPI.controller.php
 
 // ✅ PADRONIZAÇÃO: Incluindo o arquivo com o mesmo nome da classe.
-require_once '../model/ProjetosIntegradoresDAO.class.php';
+require_once '../model/cadastroPiDAO.class.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // 1. Coleta de dados

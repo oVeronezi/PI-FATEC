@@ -164,3 +164,76 @@ CREATE TABLE IF NOT EXISTS Projeto_Disciplina (
     FOREIGN KEY (id_projeto) REFERENCES ProjetosIntegradores(id_pi),
     FOREIGN KEY (id_disciplina) REFERENCES Disciplinas(id_disciplina)
 );
+
+-- Fazendo os inserts de alunos
+INSERT INTO Usuarios(nome, email, )
+
+-- Aluno: Bruno Righi
+INSERT INTO Usuarios (nome, email) VALUES ('Bruno Righi', 'bruno.righi@fatec.sp.gov.br');
+SET @id_aluno = LAST_INSERT_ID();
+INSERT INTO Alunos (id_aluno, ra, github, linkedin, semestre) 
+VALUES (@id_aluno, 'RA001001', 'https://github.com/BrunoozL', 'https://linkedin.com/in/bruno-righi', 1);
+
+-- Aluno: Cainã Bertolini
+INSERT INTO Usuarios (nome, email) VALUES ('Cainã Bertolini', 'caina.bertolini@fatec.sp.gov.br');
+SET @id_aluno = LAST_INSERT_ID();
+INSERT INTO Alunos (id_aluno, ra, github, linkedin, semestre) 
+VALUES (@id_aluno, 'RA001002', 'https://github.com/cainanbermon', 'https://linkedin.com/in/caina-bertolini', 1);
+
+-- Aluno: Weverton Ryan
+INSERT INTO Usuarios (nome, email) VALUES ('Weverton Ryan', 'weverton.ryan@fatec.sp.gov.br');
+SET @id_aluno = LAST_INSERT_ID();
+INSERT INTO Alunos (id_aluno, ra, github, linkedin, semestre) 
+VALUES (@id_aluno, 'RA001003', 'https://github.com/wevertonryan', 'https://linkedin.com/in/weverton-ryan', 1);
+
+-- -----------------------------------------------------------------
+-- Alunos do Projeto Fogo Zero
+-- -----------------------------------------------------------------
+-- Aluno: Kaique Onencio de Souza
+INSERT INTO Usuarios (nome, email) VALUES ('Kaique Onencio de Souza', 'kaique.souza@fatec.sp.gov.br');
+SET @id_aluno = LAST_INSERT_ID();
+INSERT INTO Alunos (id_aluno, ra, github, linkedin, semestre) 
+VALUES (@id_aluno, 'RA002001', 'https://github.com/kaiqsou', 'https://linkedin.com/in/kaique-souza', 2);
+
+-- Aluno: Marina Frankin
+INSERT INTO Usuarios (nome, email) VALUES ('Marina Frankin', 'marina.frankin@fatec.sp.gov.br');
+SET @id_aluno = LAST_INSERT_ID();
+INSERT INTO Alunos (id_aluno, ra, github, linkedin, semestre) 
+VALUES (@id_aluno, 'RA002002', 'https://github.com/marinafrankin', 'https://linkedin.com/in/marina-frankin', 2);
+
+-- Aluno: Tamires Talier
+INSERT INTO Usuarios (nome, email) VALUES ('Tamires Talier', 'tamires.talier@fatec.sp.gov.br');
+SET @id_aluno = LAST_INSERT_ID();
+INSERT INTO Alunos (id_aluno, ra, github, linkedin, semestre) 
+VALUES (@id_aluno, 'RA002003', 'https://github.com/tamirestalier', 'https://linkedin.com/in/tamires-talier', 2);
+
+-- -----------------------------------------------------------------
+-- Alunos do Projeto LeadSearch
+-- -----------------------------------------------------------------
+-- Aluno: Bruno Ferraz
+INSERT INTO Usuarios (nome, email) VALUES ('Bruno Ferraz', 'bruno.ferraz@fatec.sp.gov.br');
+SET @id_aluno = LAST_INSERT_ID();
+INSERT INTO Alunos (id_aluno, ra, github, linkedin, semestre) 
+VALUES (@id_aluno, 'RA002004', 'https://github.com/BrunoFzx', 'https://linkedin.com/in/bruno-ferraz', 2);
+
+-- Aluno: Gabriel Magina Coutinho
+INSERT INTO Usuarios (nome, email) VALUES ('Gabriel Magina Coutinho', 'gabriel.coutinho@fatec.sp.gov.br');
+SET @id_aluno = LAST_INSERT_ID();
+INSERT INTO Alunos (id_aluno, ra, github, linkedin, semestre) 
+VALUES (@id_aluno, 'RA002005', 'https://github.com/Gabriel-M-Coutinho', 'https://linkedin.com/in/gabriel-coutinho', 2);
+
+-- -----------------------------------------------------------------
+-- Alunos do Projeto Girls in Stem
+-- -----------------------------------------------------------------
+-- Aluno: Yasmim Sanchez
+INSERT INTO Usuarios (nome, email) VALUES ('Yasmim Sanchez', 'yasmim.sanchez@fatec.sp.gov.br');
+SET @id_aluno = LAST_INSERT_ID();
+INSERT INTO Alunos (id_aluno, ra, github, linkedin, semestre) 
+VALUES (@id_aluno, 'RA003001', 'https://github.com/YasmimSanchez-Coder', 'https://linkedin.com/in/yasmim-sanchez', 3);
+
+-- Aluno: Paulo Machado
+INSERT INTO Usuarios (nome, email) VALUES ('Paulo Machado', 'paulo.machado@fatec.sp.gov.br');
+SET @id_aluno = LAST_INSERT_ID();
+INSERT INTO Alunos (id_aluno, ra, github, linkedin, semestre) 
+VALUES (@id_aluno, 'RA003002', 'https://github.com/paulo-m-machado', 'https://linkedin.com/in/paulo-machado', 3);
+

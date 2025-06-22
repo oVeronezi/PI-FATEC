@@ -10,7 +10,7 @@ $alunos = $alunosDAO->listarAlunos();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro De Projetos Integradores</title>
+    <title>Cadastro De PIs</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
@@ -84,7 +84,7 @@ $alunos = $alunosDAO->listarAlunos();
                 </div>
 
                 <div class="text-center">
-                    <a href="../home.php" class="text-black font-bold hover:text-purple-600">Voltar</a>
+                    <a href="/home" class="text-black font-bold hover:text-purple-600">Voltar</a>
                 </div>
             </form>
         </div>
