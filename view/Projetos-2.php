@@ -141,7 +141,7 @@
             <div
                 class="h-full flex flex-col max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg bg-white hover:text-purple-800">
                 <div class="flex justify-center p-4">
-                    <img class="w-full h-48 object-cover rounded-lg" src="../img/pi-leadsearch.jfif"
+                    <img class="w-full h-48 object-cover rounded-lg" src="../img/leadsearch.jpeg"
                         alt="Imagem do Projeto">
                 </div>
                 <div class="px-6 py-4 flex-grow">

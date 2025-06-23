@@ -99,6 +99,15 @@ $lista = $controller->listarProfessores();
                                 <?php endif; ?>
                                 <a href="<?= htmlspecialchars($prof->lattes) ?>" target="_blank"
                                     class="mt-2 mb-2 flex-1 bg-purple-600 text-white px-5 py-2 rounded-lg shadow hover:bg-purple-800 transition duration-300 text-center">Lattes</a>
+
+                                <!-- Botão de Excluir -->
+                                <form action="" method="POST" onsubmit="return confirm('Tem certeza que deseja excluir este professor?');" class="mt-2 mb-2">
+                                    <input type="hidden" name="id_professor" value="<?= htmlspecialchars($prof->id_usuario) ?>">
+                                    <button type="submit" name="deletar"
+                                        class="flex-1 bg-red-600 text-white px-5 py-2 rounded-lg shadow hover:bg-red-800 transition duration-300 text-center">
+                                        Excluir
+                                    </button>
+                                </form>
                             </div>
                         </div>
                     </li>
@@ -106,6 +115,7 @@ $lista = $controller->listarProfessores();
             </ul>
         </div>
     </div>
+
 
 
     <!-- Footer -->
