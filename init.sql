@@ -64,7 +64,7 @@ INSERT INTO Professores (id_professor, linkedin, lattes, foto_url, disciplina)
 VALUES (@ultimo_id_usuario, 'https://www.linkedin.com/in/cida-zem-52936a34/', 'http://lattes.cnpq.br/6123540746643830', '../img/cida.png', 'Engenharia de Software');
 
 INSERT INTO Usuarios (nome, email, ultimo_acesso, data_cadastro, data_exclusao)
-VALUES ('Hélio Luis da Silva Rodrigues', 'helio.rodrigues@fatec.sp.gov.br', NOW(), NOW(), NULL);
+VALUES ('Helio Luis da Silva Rodrigues', 'helio.rodrigues@fatec.sp.gov.br', NOW(), NOW(), NULL);
 
 SET @ultimo_id_usuario = LAST_INSERT_ID();
 
@@ -93,15 +93,15 @@ VALUES ('Tiago Antonio da Silva', 'tiago.silva238@fatec.sp.gov.br', NOW(), NOW()
 SET @ultimo_id_usuario = LAST_INSERT_ID();
 
 INSERT INTO Professores (id_professor, linkedin, lattes, foto_url, disciplina)
-VALUES (@ultimo_id_usuario, 'https://www.linkedin.com/in/tiagotas/', 'http://lattes.cnpq.br/0183165737768103', '../img/tiago.png', 'Algoritimos e Lógica de Programação, Estrutura de Dados');
+VALUES (@ultimo_id_usuario, 'https://www.linkedin.com/in/tiagotas/', 'http://lattes.cnpq.br/0183165737768103', '../img/tiago.png', 'Algoritimos e Logica de Programacao, Estrutura de Dados');
 
 INSERT INTO Usuarios (nome, email, ultimo_acesso, data_cadastro, data_exclusao)
-VALUES ('Vânia Somaio Teixeira', 'vania.teixeira@fatec.sp.gov.br', NOW(), NOW(), NULL);
+VALUES ('Vania Somaio Teixeira', 'vania.teixeira@fatec.sp.gov.br', NOW(), NOW(), NULL);
 
 SET @ultimo_id_usuario = LAST_INSERT_ID();
 
 INSERT INTO Professores (id_professor, linkedin, lattes, foto_url, disciplina)
-VALUES (@ultimo_id_usuario, '', 'http://lattes.cnpq.br/4413496984677686', '../img/vania.png', 'Desenvolvimento Web, Tecnicas de Programação');
+VALUES (@ultimo_id_usuario, '', 'http://lattes.cnpq.br/4413496984677686', '../img/default.jpg', 'Desenvolvimento Web, Tecnicas de Programacao');
 
 
 -- Tabela Disciplinas
