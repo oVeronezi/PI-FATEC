@@ -1,7 +1,6 @@
 CREATE DATABASE IF NOT EXISTS dbdsm CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE dbdsm;
  
- 
  -- Tabela Usuarios
 CREATE TABLE IF NOT EXISTS Usuarios (
     id_usuario BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY,
@@ -165,8 +164,6 @@ CREATE TABLE IF NOT EXISTS Projeto_Disciplina (
     FOREIGN KEY (id_disciplina) REFERENCES Disciplinas(id_disciplina)
 );
 
--- Fazendo os inserts de alunos
-INSERT INTO Usuarios(nome, email, )
 
 -- Aluno: Bruno Righi
 INSERT INTO Usuarios (nome, email) VALUES ('Bruno Righi', 'bruno.righi@fatec.sp.gov.br');
