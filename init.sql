@@ -166,7 +166,7 @@ CREATE TABLE IF NOT EXISTS Projeto_Disciplina (
 );
 
 -- Fazendo os inserts de alunos
-INSERT INTO Usuarios(nome, email, )
+
 
 -- Aluno: Bruno Righi
 INSERT INTO Usuarios (nome, email) VALUES ('Bruno Righi', 'bruno.righi@fatec.sp.gov.br');
